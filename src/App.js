@@ -4,6 +4,7 @@ import { isDesktop } from 'react-device-detect';
 
 import Landing from './Pages/Landing';
 import Settings from './Pages/Settings';
+import Error from './Pages/Error';
 
 import Plan from './Pages/Desktop/Plan';
 import Session from './Pages/Desktop/Session';
@@ -26,6 +27,7 @@ function App() {
         <Route path='/plan/edit' element={<EditPlans/>}/>
         <Route path='/session/current' element={<CurrentSession/>}/>
         <Route path='/settings' element={<Settings/>}/>
+        <Route path='*' element={<Error/>}/>
       </Routes>
     </BrowserRouter>
   );
