@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { isDesktop } from 'react-device-detect';
 
 import Landing from './Pages/Landing';
 import Settings from './Pages/Settings';
@@ -19,9 +20,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/session' element={true ? <Session/> : <Sessions/>}/>
-        <Route path='/plan' element={true ? <Plan/> : <Plans/>}/>
-        <Route path='/stat' element={true ? <Stat/> : <Stats/>}/>
+        <Route path='/session' element={isDesktop ? <Session/> : <Sessions/>}/>
+        <Route path='/plan' element={isDesktop ? <Plan/> : <Plans/>}/>
+        <Route path='/stat' element={isDesktop ? <Stat/> : <Stats/>}/>
         <Route path='/plan/edit' element={<EditPlans/>}/>
         <Route path='/session/current' element={<CurrentSession/>}/>
         <Route path='/settings' element={<Settings/>}/>
