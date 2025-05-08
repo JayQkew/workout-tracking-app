@@ -24,8 +24,8 @@ function App() {
         <Route path='/session' element={isDesktop ? <Session/> : <Sessions/>}/>
         <Route path='/plan' element={isDesktop ? <Plan/> : <Plans/>}/>
         <Route path='/stat' element={isDesktop ? <Stat/> : <Stats/>}/>
-        <Route path='/plan/edit' element={<EditPlans/>}/>
-        <Route path='/session/current' element={<CurrentSession/>}/>
+        <Route path='/plan/edit' element={isDesktop ? <Plan/> : <EditPlans/>}/>
+        <Route path='/session/current' element={isDesktop ? <Session/> : <CurrentSession/>}/>
         <Route path='/settings' element={<Settings/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
