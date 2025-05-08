@@ -1,7 +1,7 @@
-import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { isDesktop } from 'react-device-detect';
 
+import Navbar from './Components/Navbar/Navbar';
 import Landing from './Pages/Landing';
 import Settings from './Pages/Settings';
 import Error from './Pages/Error';
@@ -19,6 +19,7 @@ import Stats from './Pages/Mobile/Stats';
 function App() {
   return (
     <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/session' element={isDesktop ? <Session/> : <Sessions/>}/>
