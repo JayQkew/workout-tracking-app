@@ -9,7 +9,7 @@ function Navbar(){
         <ul className="nav-menu">
           <li className="nav-item">
             <NavLink 
-              to="/" 
+              to="/home" 
               className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
             >
               Home
