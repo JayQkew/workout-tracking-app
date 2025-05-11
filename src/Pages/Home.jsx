@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../Components/Header/Header";
+import Header from "../Components/PageHeader/PageHeader";
 
 function Home(){
     return(

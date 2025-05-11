@@ -1,11 +1,53 @@
-import React from "react";
-import './Header.css'
+import './Header.css';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { isDesktop } from 'react-device-detect';
 
-function Header(prop){
-    const {page} = prop
-    return <h1 className="page-header">
-        {page}
-    </h1>
+function Header(){
+    return(
+        <header className='app-header'>
+          <NavLink 
+            to="/home" 
+            className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+          >
+            Logo
+          </NavLink>
+          <nav>
+            <ul className="nav-menu">
+              <li className="nav-item">
+                <NavLink 
+                  to="/plan" 
+                  className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                >
+                  {isDesktop ? "Plan" : "Plans"}
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink 
+                  to="/session" 
+                  className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                >
+                  {isDesktop ? "Session" : "Sessions"}
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink 
+                  to="/stat" 
+                  className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                >
+                  {isDesktop ? "Stat" : "Stats"}
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+            <NavLink 
+              to="/settings" 
+              className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+            >
+              Settings
+            </NavLink>
+        </header>
+    )
 }
 
 export default Header;
