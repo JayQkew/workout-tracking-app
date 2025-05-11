@@ -1,8 +1,10 @@
 import React from "react";
 
+import Header from "../../Components/Header/Header";
+
 function Plan(){
     return(
-        <h1>Plan Page</h1>
+        <Header page='Plan'/>
     )
 }
 

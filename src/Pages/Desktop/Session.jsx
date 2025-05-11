@@ -1,8 +1,9 @@
 import React from "react";
+import Header from '../../Components/Header/Header'
 
 function Session(){
     return(
-        <h1>Session Page</h1>
+        <Header page='Session'/>
     )
 }
 

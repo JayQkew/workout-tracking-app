@@ -1,8 +1,9 @@
 import React from "react";
+import Header from "../Components/Header/Header";
 
 function Settings(){
     return(
-        <h1>Settings Page</h1>
+        <Header page='Settings'/>
     )
 }
 

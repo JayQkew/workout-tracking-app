@@ -1,8 +1,10 @@
 import React from "react";
 
+import Header from "../../Components/Header/Header";
+
 function Stat(){
     return(
-        <h1>Stat Page</h1>
+        <Header page="Stats"/>
     )
 }
 
