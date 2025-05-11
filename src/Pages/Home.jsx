@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../Components/PageHeader/PageHeader";
 
 function Home(){

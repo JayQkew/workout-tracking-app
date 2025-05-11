@@ -1,0 +1,20 @@
+.plans-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: baseline;
+    gap: 1rem;
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.plans-list li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 1rem;
+}

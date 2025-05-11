@@ -1,15 +1,22 @@
 import React from "react";
+import './PageContent.css'
 
-import Header from "../../Components/PageHeader/PageHeader";
+import PageHeader from "../../Components/PageHeader/PageHeader";
+import AllPlans from "../../Components/AllPlans/AllPlans";
 
 function Plan(){
     return(
-        <>
-            <Header page='Plan'/>
-            <main>
-                
-            </main>
-        </>
+        <main>
+            <PageHeader page='Plan'/>
+            <section className="main-content">
+                <aside className="side-cards">
+                    <AllPlans/>
+                </aside>
+                <section className="main-cards">
+                    content
+                </section>
+            </section>
+        </main>
     )
 }
 
