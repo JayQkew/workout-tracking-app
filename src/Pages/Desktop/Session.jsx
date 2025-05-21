@@ -2,8 +2,16 @@ import './PageContent.css'
 
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import AllSessions from '../../Components/AllSessions/AllSessions'
+import ExerciseCard from '../../Components/ExerciseCard/ExerciseCard'
 
 function Session(){
+    const exercises = [
+        'Exericse',
+        'Exericse',
+        'Exericse',
+        'Exericse',
+    ]
+
     return(
         <main>
             <PageHeader page='Session'/>
@@ -12,7 +20,7 @@ function Session(){
                     <AllSessions/>
                 </aside>
                 <section className="main-cards">
-                    content
+                    {exercises.map(e => <ExerciseCard />)}
                 </section>
             </section>
         </main>
