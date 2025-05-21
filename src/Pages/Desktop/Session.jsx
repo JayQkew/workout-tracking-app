@@ -20,7 +20,11 @@ function Session(){
                     <AllSessions/>
                 </aside>
                 <section className="main-cards">
-                    {exercises.map(e => <ExerciseCard />)}
+                    {exercises.map((e, index) => (
+                        <ExerciseCard 
+                            key={index}
+                            show={index === 0}/>
+                    ))}
                 </section>
             </section>
         </main>
