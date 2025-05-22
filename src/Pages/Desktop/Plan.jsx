@@ -2,8 +2,18 @@ import './PageContent.css'
 
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import AllPlans from "../../Components/AllPlans/AllPlans";
+import SessionPlan from '../../Components/SessionPlan/SessionPlan';
 
 function Plan(){
+    const sessions = [
+        'one',
+        'one',
+        'one',
+        'one',
+        'one',
+        'one',
+    ]
+
     return(
         <main>
             <PageHeader page='Plan'/>
@@ -12,7 +22,7 @@ function Plan(){
                     <AllPlans/>
                 </aside>
                 <section className="main-cards">
-                    content
+                    {sessions.map(s => <SessionPlan/>)}
                 </section>
             </section>
         </main>

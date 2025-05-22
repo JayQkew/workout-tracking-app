@@ -7,7 +7,7 @@ function Header(){
     return(
         <header className='app-header'>
           <NavLink 
-            to="/home" 
+            to="/" 
             className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
           >
             Logo
