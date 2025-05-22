@@ -1,4 +1,4 @@
-function SessionExercise(){
+function ExerciseSets(){
     return(
         <li className='complete-set'>
             <p>Exercise</p>
@@ -8,4 +8,4 @@ function SessionExercise(){
     )
 }
 
-export default SessionExercise
+export default ExerciseSets
