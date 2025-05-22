@@ -7,7 +7,8 @@ function PlannedSession(){
             <h2>Session</h2>
             <ul className="exercise-list">
                 {exercises.map((e, index) => <ExerciseSets key={index}/>)}
-            </ul>
+            </ul> 
+            <button>Add Exercise</button>
         </section>
     )
 }

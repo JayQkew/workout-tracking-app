@@ -1,10 +1,17 @@
-import React from "react";
+import './PlanCard.css'
+import PlanSticker from '../PlanSticker/PlanSticker'
 
 function PlanCard(props){
     const { plan, id } = props
+    const planStickers =[1, 1, 1, 1]
     return(
-        <li key={id}>
-            {plan}
+        <li key={id} className='plan-card'>
+            <p className='plan-name'>{plan}</p>
+            <ul className='sticker-list'>
+                {planStickers.map((s, index) => {
+                    return <PlanSticker />
+                })}
+            </ul>
         </li>
     )
 }
