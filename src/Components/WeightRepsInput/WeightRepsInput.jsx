@@ -1,6 +1,6 @@
-import './SetInput.css'
+import './WeightRepsInput.css'
 
-function SetInput(){
+function WeightRepsInput(){
     return(
         <section className="set-input-container">
             <input type="number"/>
@@ -10,4 +10,4 @@ function SetInput(){
     )
 }
 
-export default SetInput
+export default WeightRepsInput

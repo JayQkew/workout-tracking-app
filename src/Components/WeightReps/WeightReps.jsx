@@ -1,6 +1,6 @@
-import './SetCard.css'
+import './WeightReps.css'
 
-function SetCard(){
+function WeightReps(){
     return (
         <li className='complete-set'>
             <p>Weight</p>
@@ -10,4 +10,4 @@ function SetCard(){
     )
 }
 
-export default SetCard
+export default WeightReps

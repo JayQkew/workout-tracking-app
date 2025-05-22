@@ -2,7 +2,7 @@ import './PageContent.css'
 
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import AllSessions from '../../Components/AllSessions/AllSessions'
-import ExerciseCard from '../../Components/ExerciseCard/ExerciseCard'
+import SessionExercise from '../../Components/SessionExercise/SessionExercise'
 
 function Session(){
     const exercises = [
@@ -21,7 +21,7 @@ function Session(){
                 </aside>
                 <section className="main-cards">
                     {exercises.map((e, index) => (
-                        <ExerciseCard 
+                        <SessionExercise 
                             key={index}
                             show={index === 0}/>
                     ))}
