@@ -7,17 +7,6 @@ import PlannedSession from '../../Components/PlannedSession/PlannedSession';
 import plans from '../../workout-plans.json'
 
 function Plan(){
-    const sessions = [
-        'one',
-        'one',
-        'one',
-        'one',
-        'one',
-        'one',
-    ]
-
-    console.log(plans)
-
     return(
         <main>
             <PageHeader page='Plan'/>
@@ -26,7 +15,7 @@ function Plan(){
                     <AllPlans plans={plans}/>
                 </aside>
                 <section className="main-cards">
-                    {sessions.map(s => <PlannedSession/>)}
+                    {plans[0].sessions.map(s => <PlannedSession session={s}/>)}
                 </section>
             </section>
         </main>

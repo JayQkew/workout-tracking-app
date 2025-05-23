@@ -2,14 +2,7 @@ import './AllPlans.css'
 import PlanCard from "../PlanCard/PlanCard";
 
 function AllPlans(props){
-
     const { plans } = props
-
-    // const plans = [
-    //     "Push Pull Legs",
-    //     "Upper Lower",
-    //     "Bro Plan"
-    // ]
 
     return(
         <>

@@ -155,6 +155,12 @@
                     "sets": 0
                 }
                 ]
+            },
+            {
+                "id": "",
+                "name": "",
+                "type": "rest",
+                "exercises": []
             }
         ]
     }
