@@ -9,7 +9,7 @@ function AllPlans(props){
             <h2>Plans</h2>
             <ul className="plans-list">
                 {plans.map((p, i) => {
-                    return <PlanCard plan={p} id={i}/>
+                    return <PlanCard plan={p} key={i}/>
                 })}
             </ul>
         </>

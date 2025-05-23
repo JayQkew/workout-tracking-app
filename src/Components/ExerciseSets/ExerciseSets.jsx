@@ -1,9 +1,8 @@
-function ExerciseSets(){
+function ExerciseSets(props){
+    const { exercise } = props
     return(
         <li className='complete-set'>
-            <p>Exercise</p>
-            <p>x</p>
-            <p>Sets</p>
+            <p>{exercise.name}   x  {exercise.sets} Sets</p>
         </li>
     )
 }

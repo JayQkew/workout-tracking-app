@@ -15,7 +15,7 @@ function Plan(){
                     <AllPlans plans={plans}/>
                 </aside>
                 <section className="main-cards">
-                    {plans[0].sessions.map(s => <PlannedSession session={s}/>)}
+                    {plans[0].sessions.map((s, i) => <PlannedSession session={s} key={i}/>)}
                 </section>
             </section>
         </main>
