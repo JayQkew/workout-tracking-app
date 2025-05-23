@@ -1,0 +1,22 @@
+[
+    {
+        "id": "",
+        "name": "",
+        "type": "",
+        "date": "",
+        "count": "",
+        "sessions": [
+            {
+                "id": "",
+                "name": "",
+                "exercises": [
+                    {
+                        "id": "",
+                        "name": "",
+                        "sets": 0
+                    }
+                ]
+            }
+        ]
+    }
+]
