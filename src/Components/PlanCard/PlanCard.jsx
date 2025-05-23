@@ -6,9 +6,9 @@ function PlanCard(props){
     const planStickers =[1, 1, 1, 1]
     return(
         <li key={id} className='plan-card'>
-            <p className='plan-name'>{plan}</p>
+            <p className='plan-name'>{plan.name}</p>
             <ul className='sticker-list'>
-                {planStickers.map((s, index) => {
+                {plan.sessions.map((s, index) => {
                     return <PlanSticker />
                 })}
             </ul>

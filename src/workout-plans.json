@@ -94,5 +94,68 @@
                 "exercises": []
             }
         ]
+    },
+    {
+        "id": "1716450100000",
+        "name": "Upper Lower Split",
+        "type": "cycle",
+        "date": "2025 05 23",
+        "repeated": 4,
+        "sessions": [
+            {
+                "id": "1716450100001",
+                "name": "Upper A",
+                "type": "gym",
+                "exercises": [
+                {
+                    "id": "1716450100002",
+                    "name": "Incline Bench Press",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100003",
+                    "name": "Pull-ups",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100004",
+                    "name": "Overhead Press",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100005",
+                    "name": "Barbell Row",
+                    "sets": 0
+                }
+                ]
+            },
+            {
+                "id": "1716450100006",
+                "name": "Lower A",
+                "type": "gym",
+                "exercises": [
+                {
+                    "id": "1716450100007",
+                    "name": "Back Squat",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100008",
+                    "name": "Romanian Deadlift",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100009",
+                    "name": "Walking Lunges",
+                    "sets": 0
+                },
+                {
+                    "id": "1716450100010",
+                    "name": "Standing Calf Raise",
+                    "sets": 0
+                }
+                ]
+            }
+        ]
     }
 ]
