@@ -1,21 +1,97 @@
 [
     {
         "id": "",
-        "name": "",
-        "type": "",
-        "date": "",
-        "count": "",
+        "name": "Push Pull Legs",
+        "type": "cycle",
+        "date": "2025 05 23",
+        "repeated": 4,
         "sessions": [
             {
                 "id": "",
-                "name": "",
+                "name": "Push Day",
+                "type": "gym",
                 "exercises": [
                     {
                         "id": "",
-                        "name": "",
+                        "name": "Bench Press",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Cable Flies",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Tricep Pushdown",
+                        "sets": 0
+                    },                    
+                    {
+                        "id": "",
+                        "name": "Lateral Raise",
                         "sets": 0
                     }
                 ]
+            },
+            {
+                "id": "",
+                "name": "Pull Day",
+                "type": "gym",
+                "exercises": [
+                    {
+                        "id": "",
+                        "name": "Lat Pulldown",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Dumbbell Row",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Preacher Curls",
+                        "sets": 0
+                    },                    
+                    {
+                        "id": "",
+                        "name": "Easy Bar Curls",
+                        "sets": 0
+                    }
+                ]
+            },
+            {
+                "id": "",
+                "name": "Leg Day",
+                "type": "gym",
+                "exercises": [
+                    {
+                        "id": "",
+                        "name": "Barbell Squat",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Leg Press",
+                        "sets": 0
+                    },
+                    {
+                        "id": "",
+                        "name": "Leg Extension",
+                        "sets": 0
+                    },                    
+                    {
+                        "id": "",
+                        "name": "Leg Curl",
+                        "sets": 0
+                    }
+                ]
+            },
+            {
+                "id": "",
+                "name": "",
+                "type": "rest",
+                "exercises": []
             }
         ]
     }
