@@ -1,0 +1,24 @@
+[
+    {
+        "id": "",
+        "plan": "",
+        "sessions": [
+            {
+                "id": "",
+                "name": "",
+                "exercises": [
+                    {
+                        "id": "",
+                        "name": "",
+                        "sets":[
+                            { "weight": 0, "reps": 0 },
+                            { "weight": 0, "reps": 0 },
+                            { "weight": 0, "reps": 0 },
+                            { "weight": 0, "reps": 0 }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
