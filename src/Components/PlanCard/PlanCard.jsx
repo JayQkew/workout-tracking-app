@@ -11,7 +11,7 @@ function PlanCard(props){
             <p className='plan-name'>{plan.name}</p>
             <ul className='sticker-list'>
                 {plan.sessions.map((s, index) => {
-                    return <PlanSticker key={index}/>
+                    return <PlanSticker key={index} session={s}/>
                 })}
             </ul>
         </li>
