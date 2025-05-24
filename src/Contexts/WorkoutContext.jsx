@@ -11,10 +11,11 @@ export function WorkoutProvider({ children }){
     const [session, setSession] = useState(plan.sessions[0]);
 
     function setPlan(newPlan) {
-        setPlanState(newPlan);
+        setPlanState(newPlan)
         setAllPlans(prevPlans =>
             prevPlans.map(p => p.id === newPlan.id ? newPlan : p)
         );
+        setSession(plan.sessions[0])
     }
 
     function setNewSession(newSession){
