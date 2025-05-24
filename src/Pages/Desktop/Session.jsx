@@ -1,14 +1,14 @@
 import './PageContent.css'
-import React, { useContext } from 'react'
+import React, { use, useContext } from 'react'
 
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import AllSessions from '../../Components/AllSessions/AllSessions'
 import SessionExercise from '../../Components/SessionExercise/SessionExercise'
 
-import { WorkoutContext } from '../../Contexts/WorkoutContext'
+import { useWorkout } from '../../Contexts/WorkoutContext'
 
 function Session(){
-    const { plan } = useContext(WorkoutContext);
+    const { plan } = useWorkout();
 
     return(
         <main>

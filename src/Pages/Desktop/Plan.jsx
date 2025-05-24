@@ -4,12 +4,10 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 import AllPlans from "../../Components/AllPlans/AllPlans";
 import PlannedSession from '../../Components/PlannedSession/PlannedSession';
 
-import { WorkoutContext } from '../../Contexts/WorkoutContext';
-
-import { useContext } from 'react';
+import { useWorkout } from '../../Contexts/WorkoutContext';
 
 function Plan(){
-    const { plan, allPlans } = useContext(WorkoutContext);
+    const { plan, allPlans } = useWorkout();
     return(
         <main>
             <PageHeader page='Plan'/>

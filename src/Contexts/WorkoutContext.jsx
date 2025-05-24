@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 import plans from '../workout-plans.json';
 import tracker from '../workout-tracking.json'; 
 
-export const WorkoutContext = createContext();
+const WorkoutContext = createContext();
 
 export function WorkoutProvider({ children }){
     const [plan, setPlan] = useState(plans[0]);
