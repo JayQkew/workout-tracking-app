@@ -7,9 +7,6 @@ import SessionExercise from '../../Components/SessionExercise/SessionExercise'
 
 import { WorkoutContext } from '../../Contexts/WorkoutContext'
 
-import plans from '../../workout-plans.json'
-// import tracker from '../../workout-tracking.json'
-
 function Session(){
     const { plan } = useContext(WorkoutContext);
 

@@ -7,9 +7,10 @@ export const WorkoutContext = createContext();
 
 export function WorkoutProvider({ children }){
     const [plan, setPlan] = useState(plans[0]);
+    const [allPlans, setAllPlans] = useState(plans);
 
     return (
-        <WorkoutContext.Provider value={{ plan, setPlan }}>
+        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, setAllPlans }}>
             {children}
         </WorkoutContext.Provider>
     );
