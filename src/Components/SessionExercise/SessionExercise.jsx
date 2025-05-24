@@ -4,7 +4,6 @@ import SetInput from '../WeightRepsInput/WeightRepsInput'
 
 function SessionExercise(props){
     const {show = false, exercise} = props
-    const sets = [1, 2, 3]
 
     return(
         <section className="exercise-card">

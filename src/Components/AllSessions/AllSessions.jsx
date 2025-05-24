@@ -6,7 +6,7 @@ function AllSessions(props){
 
     return(
         <>
-            <h2>Days</h2>
+            <h2>{plan.name}</h2>
             <ul className="sessions-list">
                 {plan.sessions.map((s, i) => {
                     return <SessionCard session={s.name} id={i}/>
