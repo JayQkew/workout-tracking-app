@@ -7,14 +7,8 @@ import PlannedSession from '../../Components/PlannedSession/PlannedSession';
 import { useWorkout } from '../../Contexts/WorkoutContext';
 
 function Plan(){
-    const { plan, setPlan } = useWorkout();
+    const { plan } = useWorkout();
 
-    function handleSessionChange(index, newName){
-        const updatedSessions = plan.sessions.map((s, i) => 
-            i === index ? {...s, name: newName} : s
-        )
-        setPlan({...plan, sessions: updatedSessions});
-    }
     return(
         <main>
             <PageHeader page='Plan'/>
@@ -26,8 +20,7 @@ function Plan(){
                     {plan.sessions.map((s, i) => (
                         <PlannedSession 
                             session={s} 
-                            key={i}
-                            onChange={newName => handleSessionChange(i, newName)}/>
+                            key={i}/>
                     ))}
                 </section>
             </section>

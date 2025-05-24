@@ -17,8 +17,15 @@ export function WorkoutProvider({ children }){
         );
     }
 
+    function setSessionName(newName){
+        const updatedSessions = plan.sessions.map((s, i) => 
+            s.id === newName.id ? newName : s
+        )
+        setPlan({...plan, sessions: updatedSessions});
+    }
+
     return (
-        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session }}>
+        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session, setSessionName }}>
             {children}
         </WorkoutContext.Provider>
     );
