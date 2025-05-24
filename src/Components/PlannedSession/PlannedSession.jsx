@@ -5,18 +5,24 @@ import { useWorkout } from '../../Contexts/WorkoutContext';
 
 function PlannedSession(props){
     const { session } = props
-    const { setSessionName } = useWorkout();
+    const { setNewSession } = useWorkout();
+
+    function handleChange(e) {
+        const s = {...session, name: e.target.value}
+        setNewSession(s)
+    }
     return(
         <section className="session-plan-card">
             <input 
                 type="text" 
                 value={session.name}
-                onChange={e => {
-                    const s = {...session, name: e.target.value}
-                    setSessionName(s)
-                }}/>
+                onChange={handleChange}/>
             <ul className="exercise-list">
-                {session.exercises.map((e, i) => <ExerciseSets exercise={e} key={i}/>)}
+                {session.exercises.map((e, i) => 
+                    <ExerciseSets 
+                        exercise={e}
+                        session={session}
+                        key={i}/>)}
             </ul> 
             <button>Add Exercise</button>
         </section>

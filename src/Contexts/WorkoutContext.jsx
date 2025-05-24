@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
 import plans from '../workout-plans.json';
-import tracker from '../workout-tracking.json'; 
+// import tracker from '../workout-tracking.json'; 
 
 const WorkoutContext = createContext();
 
@@ -17,15 +17,15 @@ export function WorkoutProvider({ children }){
         );
     }
 
-    function setSessionName(newName){
-        const updatedSessions = plan.sessions.map((s, i) => 
-            s.id === newName.id ? newName : s
+    function setNewSession(newSession){
+        const updatedSessions = plan.sessions.map(s => 
+            s.id === newSession.id ? newSession : s
         )
         setPlan({...plan, sessions: updatedSessions});
     }
 
     return (
-        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session, setSessionName }}>
+        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session, setNewSession }}>
             {children}
         </WorkoutContext.Provider>
     );
