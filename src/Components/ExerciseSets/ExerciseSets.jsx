@@ -26,21 +26,11 @@ function ExerciseSets(props){
     return(
         <li className='complete-set'>
             <div>
-            <input 
-                type="text" 
-                value={exercise.name} 
-                onChange={handleExerciseChange}/>
-            x
-            <input 
-                type="number" 
-                value={exercise.sets}
-                onChange={handleSetsChange}/>
-            </div>
-            <button
-                className="delete-set"
-                onClick={handleDeleteSet}>
+                <input type="text" value={exercise.name} onChange={handleExerciseChange}/>
                 x
-            </button>
+                <input type="number" value={exercise.sets} onChange={handleSetsChange}/>
+            </div>
+            <button onClick={handleDeleteSet}>x</button>
         </li>
     )
 }

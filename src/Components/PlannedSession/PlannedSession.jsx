@@ -5,11 +5,16 @@ import { useWorkout } from '../../Contexts/WorkoutContext';
 
 function PlannedSession(props){
     const { session } = props
-    const { setNewSession } = useWorkout();
+    const { setNewSession, plan, setPlan } = useWorkout();
 
     function handleChange(e) {
         const s = {...session, name: e.target.value}
         setNewSession(s)
+    }
+
+    function handleDeleteSession() {
+        const p = {...plan, sessions: plan.sessions.filter(s => s.id !== session.id)};
+        setPlan(p);
     }
     return(
         <section className="session-plan-card">
@@ -17,6 +22,7 @@ function PlannedSession(props){
                 type="text" 
                 value={session.name}
                 onChange={handleChange}/>
+            <button onClick={handleDeleteSession}>Delete Session</button>    
             <ul className="exercise-list">
                 {session.exercises.map((e, i) => 
                     <ExerciseSets 
