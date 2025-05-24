@@ -27,7 +27,7 @@ function Plan(){
                         <PlannedSession 
                             session={s} 
                             key={i}
-                            onNameChange={newName => handleSessionChange(i, newName)}/>
+                            onChange={newName => handleSessionChange(i, newName)}/>
                     ))}
                 </section>
             </section>
