@@ -18,8 +18,14 @@ function ExerciseSets(props){
         setNewSession(s);
     }
 
+    function handleDeleteSet() {
+        const s = { ...session, exercises: session.exercises.filter(ex => ex.id !== exercise.id) };
+        setNewSession(s);
+    }
+
     return(
         <li className='complete-set'>
+            <div>
             <input 
                 type="text" 
                 value={exercise.name} 
@@ -29,6 +35,12 @@ function ExerciseSets(props){
                 type="number" 
                 value={exercise.sets}
                 onChange={handleSetsChange}/>
+            </div>
+            <button
+                className="delete-set"
+                onClick={handleDeleteSet}>
+                x
+            </button>
         </li>
     )
 }
