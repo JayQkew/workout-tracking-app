@@ -8,7 +8,7 @@ import SessionExercise from '../../Components/SessionExercise/SessionExercise'
 import { useWorkout } from '../../Contexts/WorkoutContext'
 
 function Session(){
-    const { plan } = useWorkout();
+    const { plan, session } = useWorkout();
 
     return(
         <main>
@@ -18,7 +18,7 @@ function Session(){
                     <AllSessions plan={plan}/>
                 </aside>
                 <section className="main-cards">
-                    {plan.sessions[0].exercises.map((e, index) => (
+                    {session.exercises.map((e, index) => (
                         <SessionExercise 
                             key={index}
                             exercise={e}

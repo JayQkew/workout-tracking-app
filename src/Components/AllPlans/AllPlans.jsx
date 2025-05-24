@@ -1,14 +1,16 @@
 import './AllPlans.css'
 import PlanCard from "../PlanCard/PlanCard";
 
-function AllPlans(props){
-    const { plans } = props
+import { useWorkout } from '../../Contexts/WorkoutContext';
+
+function AllPlans(){
+    const { allPlans } = useWorkout();
 
     return(
         <>
             <h2>Plans</h2>
             <ul className="plans-list">
-                {plans.map((p, i) => {
+                {allPlans.map((p, i) => {
                     return <PlanCard plan={p} key={i}/>
                 })}
             </ul>
