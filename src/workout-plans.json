@@ -1,165 +1,125 @@
 [
-    {
-        "id": "",
-        "name": "Push Pull Legs",
-        "type": "cycle",
-        "date": "2025 05 23",
-        "sessions": [
-            {
-                "id": "",
-                "name": "Push Day",
-                "type": "gym",
-                "exercises": [
-                    {
-                        "id": "",
-                        "name": "Bench Press",
-                        "sets": 4
-                    },
-                    {
-                        "id": "",
-                        "name": "Cable Flies",
-                        "sets": 4
-                    },
-                    {
-                        "id": "",
-                        "name": "Tricep Pushdown",
-                        "sets": 3
-                    },                    
-                    {
-                        "id": "",
-                        "name": "Lateral Raise",
-                        "sets": 4
-                    }
-                ]
-            },
-            {
-                "id": "",
-                "name": "Pull Day",
-                "type": "gym",
-                "exercises": [
-                    {
-                        "id": "",
-                        "name": "Lat Pulldown",
-                        "sets": 0
-                    },
-                    {
-                        "id": "",
-                        "name": "Dumbbell Row",
-                        "sets": 0
-                    },
-                    {
-                        "id": "",
-                        "name": "Preacher Curls",
-                        "sets": 0
-                    },                    
-                    {
-                        "id": "",
-                        "name": "Easy Bar Curls",
-                        "sets": 0
-                    }
-                ]
-            },
-            {
-                "id": "",
-                "name": "Leg Day",
-                "type": "gym",
-                "exercises": [
-                    {
-                        "id": "",
-                        "name": "Barbell Squat",
-                        "sets": 0
-                    },
-                    {
-                        "id": "",
-                        "name": "Leg Press",
-                        "sets": 0
-                    },
-                    {
-                        "id": "",
-                        "name": "Leg Extension",
-                        "sets": 0
-                    },                    
-                    {
-                        "id": "",
-                        "name": "Leg Curl",
-                        "sets": 0
-                    }
-                ]
-            },
-            {
-                "id": "",
-                "name": "",
-                "type": "rest",
-                "exercises": []
-            }
+  {
+    "id": "1716541213476",
+    "name": "Push Pull Legs",
+    "type": "cycle",
+    "date": "2025 05 23",
+    "sessions": [
+      {
+        "id": "1716541213510",
+        "name": "Push Day",
+        "type": "gym",
+        "exercises": [
+            {"id":"1716541213511","name":"Bench Press","sets":4},
+            {"id":"1716541213512","name":"Incline Dumbbell Press","sets":3},
+            {"id":"1716541213513","name":"Cable Flies","sets":3},
+            {"id":"1716541213514","name":"Tricep Pushdown","sets":3},
+            {"id":"1716541213515","name":"Overhead Dumbbell Tricep Extension","sets":3},
+            {"id":"1716541213516","name":"Lateral Raise","sets":4}
         ]
-    },
-    {
-        "id": "1716450100000",
-        "name": "Upper Lower Split",
-        "type": "cycle",
-        "date": "2025 05 23",
-        "sessions": [
-            {
-                "id": "1716450100001",
-                "name": "Upper A",
-                "type": "gym",
-                "exercises": [
-                {
-                    "id": "1716450100002",
-                    "name": "Incline Bench Press",
-                    "sets": 4
-                },
-                {
-                    "id": "1716450100003",
-                    "name": "Pull-ups",
-                    "sets": 3
-                },
-                {
-                    "id": "1716450100004",
-                    "name": "Overhead Press",
-                    "sets": 4
-                },
-                {
-                    "id": "1716450100005",
-                    "name": "Barbell Row",
-                    "sets": 3
-                }
-                ]
-            },
-            {
-                "id": "1716450100006",
-                "name": "Lower A",
-                "type": "gym",
-                "exercises": [
-                {
-                    "id": "1716450100007",
-                    "name": "Back Squat",
-                    "sets": 0
-                },
-                {
-                    "id": "1716450100008",
-                    "name": "Romanian Deadlift",
-                    "sets": 0
-                },
-                {
-                    "id": "1716450100009",
-                    "name": "Walking Lunges",
-                    "sets": 0
-                },
-                {
-                    "id": "1716450100010",
-                    "name": "Standing Calf Raise",
-                    "sets": 0
-                }
-                ]
-            },
-            {
-                "id": "",
-                "name": "",
-                "type": "rest",
-                "exercises": []
-            }
+      },
+      {
+        "id": "1716541213517",
+        "name": "Pull Day",
+        "type": "gym",
+        "exercises": [
+            {"id":"1716541213518","name":"Lat Pulldown","sets":4},
+            {"id":"1716541213519","name":"Dumbbell Row","sets":4},
+            {"id":"1716541213520","name":"Face Pull","sets":3},
+            {"id":"1716541213521","name":"Preacher Curls","sets":3},
+            {"id":"1716541213522","name":"EZ Bar Curl","sets":3}
         ]
-    }
+      },
+      {
+        "id": "1716541213523",
+        "name": "Leg Day",
+        "type": "gym",
+        "exercises": [
+            {"id":"1716541213524","name":"Barbell Squat","sets":4},
+            {"id":"1716541213525","name":"Leg Press","sets":4},
+            {"id":"1716541213526","name":"Leg Extension","sets":3},
+            {"id":"1716541213527","name":"Leg Curl","sets":3},
+            {"id":"1716541213528","name":"Standing Calf Raise","sets":4}
+        ]
+      },
+      {
+        "id": "1716541213529",
+        "name": "Rest Day",
+        "type": "rest",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "id": "1716450100000",
+    "name": "Upper Lower Split",
+    "type": "cycle",
+    "date": "2025 05 23",
+    "sessions": [
+      {
+        "id": "1716450100001",
+        "name": "Upper A",
+        "type": "gym",
+        "exercises": [
+            {"id":"1716450100002","name":"Incline Bench Press","sets":4},
+            {"id":"1716450100003","name":"Pull-ups","sets":3},
+            {"id":"1716450100004","name":"Overhead Press","sets":4},
+            {"id":"1716450100005","name":"Barbell Row","sets":3},
+            {"id":"1716541213530","name":"Lateral Raise","sets":3},
+            {"id":"1716541213531","name":"Bicep Curl","sets":3},
+            {"id":"1716541213532","name":"Tricep Rope Pushdown","sets":3}
+        ]
+      },
+      {
+        "id": "1716450100006",
+        "name": "Lower A",
+        "type": "gym",
+        "exercises": [
+            {"id":"1716450100007","name":"Back Squat","sets":4},
+            {"id":"1716450100008","name":"Romanian Deadlift","sets":4},
+            {"id":"1716450100009","name":"Walking Lunges","sets":3},
+            {"id":"1716450100010","name":"Standing Calf Raise","sets":4},
+            {"id":"1716541213533","name":"Seated Leg Curl","sets":3}
+        ]
+      },
+      {
+        "id": "1716541213534",
+        "name": "Rest Day",
+        "type": "rest",
+        "exercises": []
+      },
+      {
+        "id": "474556020063",
+        "name": "Upper B",
+        "type": "gym",
+        "exercises": [
+            {"id":"455581743407","name":"Flat Dumbbell Press","sets":3},
+            {"id":"513270099525","name":"Chin-ups","sets":4},
+            {"id":"819283567667","name":"Arnold Press","sets":3},
+            {"id":"224803866020","name":"Seated Cable Row","sets":4},
+            {"id":"121068202450","name":"Incline Lateral Raise","sets":4},
+            {"id":"953755212905","name":"Hammer Curl","sets":3},
+            {"id":"355781039074","name":"Close-grip Bench Press","sets":3}
+        ]
+      },
+      {
+        "id": "656362705654",
+        "name": "Lower B",
+        "type": "gym",
+        "exercises": [
+            {"id":"589652174287","name":"Front Squat","sets":4},
+            {"id":"101292098883","name":"Deadlift","sets":4},
+            {"id":"353996895875","name":"Bulgarian Split Squat","sets":3},
+            {"id":"31544449201","name":"Hip Thrust","sets":4},
+            {"id":"557551175763","name":"Seated Calf Raise","sets":3}
+        ]
+      },
+      {
+        "id": "1716541213539",
+        "name": "Rest Day",
+        "type": "rest",
+        "exercises": []
+      }
+    ]
+  }
 ]
