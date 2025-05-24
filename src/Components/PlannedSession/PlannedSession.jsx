@@ -16,6 +16,17 @@ function PlannedSession(props){
         const p = {...plan, sessions: plan.sessions.filter(s => s.id !== session.id)};
         setPlan(p);
     }
+
+    function handleAddExercise() {
+        const newExercise = {
+            id: Date.now(), // Simple unique ID based on timestamp
+            name: '',
+            sets: ''
+        };
+        const updatedSession = {...session, exercises: [...session.exercises, newExercise]};
+        setNewSession(updatedSession);
+    }
+
     return(
         <section className="session-plan-card">
             <input 
@@ -30,7 +41,7 @@ function PlannedSession(props){
                         session={session}
                         key={i}/>)}
             </ul> 
-            <button>Add Exercise</button>
+            <button onClick={handleAddExercise}>Add Exercise</button>
         </section>
     )
 }
