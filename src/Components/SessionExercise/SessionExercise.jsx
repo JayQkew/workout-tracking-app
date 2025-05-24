@@ -2,15 +2,18 @@ import './SessionExercise.css'
 import WeightReps from '../WeightReps/WeightReps'
 import SetInput from '../WeightRepsInput/WeightRepsInput'
 
-function SessionExercise({show = false}){
+function SessionExercise(props){
+    const {show = false, exercise} = props
     const sets = [1, 2, 3]
 
     return(
         <section className="exercise-card">
-            <h2>Exercise</h2>
+            <h2>{ exercise.name }</h2>
             {show && <SetInput />}
             <ul className='set-list'>
-                {sets.map((s, index) => <WeightReps key={index}/>)}
+                {[...Array(exercise.sets)].map((s, i) => (
+                    <WeightReps key={i}/>
+                ))}
             </ul>
         </section>
     )

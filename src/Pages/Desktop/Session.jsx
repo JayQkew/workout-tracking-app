@@ -4,25 +4,22 @@ import PageHeader from '../../Components/PageHeader/PageHeader'
 import AllSessions from '../../Components/AllSessions/AllSessions'
 import SessionExercise from '../../Components/SessionExercise/SessionExercise'
 
-function Session(){
-    const exercises = [
-        'Exericse',
-        'Exericse',
-        'Exericse',
-        'Exericse',
-    ]
+import plans from '../../workout-plans.json'
+import tracker from '../../workout-tracking.json'
 
+function Session(){
     return(
         <main>
             <PageHeader page='Session'/>
             <section className="main-content">
                 <aside className="side-cards">
-                    <AllSessions/>
+                    <AllSessions plan={plans[0]}/>
                 </aside>
                 <section className="main-cards">
-                    {exercises.map((e, index) => (
+                    {plans[0].sessions[0].exercises.map((e, index) => (
                         <SessionExercise 
                             key={index}
+                            exercise={e}
                             show={index === 0}/>
                     ))}
                 </section>

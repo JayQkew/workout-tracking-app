@@ -2,18 +2,14 @@ import './AllSessions.css'
 import SessionCard from '../SessionCard/SessionCard';
 
 function AllSessions(props){
-    const sessions = [
-        "Push",
-        "Pull",
-        "Legs"
-    ]
+    const { plan } = props
 
     return(
         <>
             <h2>Days</h2>
             <ul className="sessions-list">
-                {sessions.map((s, i) => {
-                    return <SessionCard session={s} id={i}/>
+                {plan.sessions.map((s, i) => {
+                    return <SessionCard session={s.name} id={i}/>
                 })}
             </ul>
         </>
