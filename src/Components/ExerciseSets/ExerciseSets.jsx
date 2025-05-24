@@ -11,7 +11,9 @@ function ExerciseSets(props){
     }
 
     function handleSetsChange(e) {
-        const _e = { ...exercise, sets: e.target.value };
+        const value = e.target.value;
+        const sets = value === '' ? '' : e.target.valueAsNumber;
+        const _e = { ...exercise, sets: sets };
         const s = { ...session, exercises: session.exercises.map(ex => ex.id === _e.id ? _e : ex)};
         setNewSession(s);
     }

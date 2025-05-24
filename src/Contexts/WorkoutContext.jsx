@@ -23,6 +23,9 @@ export function WorkoutProvider({ children }){
             s.id === newSession.id ? newSession : s
         )
         setPlan({...plan, sessions: updatedSessions});
+        if (session.id === newSession.id) {
+            setSession(newSession);
+        }
     }
 
     return (

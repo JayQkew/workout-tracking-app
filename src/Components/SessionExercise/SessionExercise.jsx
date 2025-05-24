@@ -8,13 +8,13 @@ function SessionExercise(props){
     const {show = false, exercise} = props
     const { session } = useWorkout();
 
-    const ex = session.exercises.find(e => e.id === exercise.id);
+    const ex = session.exercises.find(e => e.id === exercise.id) || exercise;
     return(
         <section className="exercise-card">
             <h2>{ ex.name }</h2>
             {show && <SetInput />}
             <ul className='set-list'>
-                {[...Array(ex.sets)].map((s, i) => (
+                {[...Array(Number(ex.sets) || 0)].map((s, i) => (
                     <WeightReps key={i}/>
                 ))}
             </ul>
