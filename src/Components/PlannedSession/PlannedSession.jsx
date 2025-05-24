@@ -19,7 +19,7 @@ function PlannedSession(props){
 
     function handleAddExercise() {
         const newExercise = {
-            id: Date.now(), // Simple unique ID based on timestamp
+            id: Date.now(),
             name: '',
             sets: ''
         };
