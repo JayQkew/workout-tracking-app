@@ -6,9 +6,16 @@ import tracker from '../workout-tracking.json';
 const WorkoutContext = createContext();
 
 export function WorkoutProvider({ children }){
-    const [plan, setPlan] = useState(plans[0]);
+    const [plan, setPlanState] = useState(plans[0]);
     const [allPlans, setAllPlans] = useState(plans);
     const [session, setSession] = useState(plan.sessions[0]);
+
+    function setPlan(newPlan) {
+        setPlanState(newPlan);
+        setAllPlans(prevPlans =>
+            prevPlans.map(p => p.id === newPlan.id ? newPlan : p)
+        );
+    }
 
     return (
         <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session }}>
