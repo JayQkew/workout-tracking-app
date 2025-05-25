@@ -13,7 +13,7 @@ function SessionExercise(props){
         <section className="exercise-card">
             <h2>{ ex.name }</h2>
             <p>0 / {ex.sets}</p>
-            <SetInput />
+            <SetInput exercise={exercise}/>
             <ul className='set-list'>
                 {/* {[...Array(Number(ex.sets) || 0)].map((s, i) => (
                     <WeightReps key={i}/>

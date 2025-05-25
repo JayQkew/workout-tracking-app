@@ -1,32 +1,19 @@
 import { createContext, useContext, useState } from "react";
+import { useWorkout } from "./WorkoutContext";
 import tracker from '../workout-tracking.json';
 
 const TrackingContext = createContext();
 
 
 export function TrackingProvider({ children }) {
-    const [tracking, setTracking] = useState({
-        sessions: [],
-        currentSession: null,
-    });
+    const { plan, session } = useWorkout();
 
-    function startSession(session) {
-        setTracking(prev => ({
-            ...prev,
-            currentSession: session,
-        }));
-    }
+    function addWeightReps(exercise, weightReps){
 
-    function endSession() {
-        setTracking(prev => ({
-            ...prev,
-            sessions: [...prev.sessions, prev.currentSession],
-            currentSession: null,
-        }));
     }
 
     return (
-        <TrackingContext.Provider value={{ tracking, startSession, endSession }}>
+        <TrackingContext.Provider value={{ addWeightReps }}>
             {children}
         </TrackingContext.Provider>
     );
