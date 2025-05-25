@@ -17,9 +17,17 @@ export function TrackingProvider({ children }) {
     function setTrackPlan(newPlan) {
         const p = {
             id: newPlan.id,
-            name: newPlan.name,
+            plan: newPlan.name,
             startDate: '',
-            sessions: []
+            sessions: newPlan.sessions.map(s => ({
+                id: s.id,
+                session: s.name,
+                exercises: s.exercises.map(e => ({
+                    id: e.id,
+                    exercise: e.name,
+                    weightReps: []
+                }))
+            }))
         }
 
         const exists = tracker.some(p => p.id === newPlan.id);
@@ -27,6 +35,8 @@ export function TrackingProvider({ children }) {
             setTracker([...tracker, p]);
         }
         setTrackPlanState(p);
+        setTrackSession(newPlan.sessions[0]);
+        console.log(tracker)
     }
 
     function addWeightReps(exercise, weightReps){
