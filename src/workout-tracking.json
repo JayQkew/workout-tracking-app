@@ -2,14 +2,18 @@
     {
         "id": "",
         "plan": "",
+        "startDate": "",
         "sessions": [
             {
                 "id": "",
-                "name": "",
+                "session": "",
+                "date": "",
+                "startTime": "",
+                "endTime": "",
                 "exercises": [
                     {
                         "id": "",
-                        "name": "",
+                        "exercise": "",
                         "sets":[
                             { "weight": 0, "reps": 0 },
                             { "weight": 0, "reps": 0 },
