@@ -6,6 +6,7 @@ function WeightRepsInput(){
             <input type="number"/>
             <p>x</p>
             <input type="number"/>
+            <button className="add-set-btn">+</button>
         </section>
     )
 }

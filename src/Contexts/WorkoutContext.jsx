@@ -1,7 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
 import plans from '../workout-plans.json';
-// import tracker from '../workout-tracking.json'; 
 
 const WorkoutContext = createContext();
 
