@@ -15,9 +15,6 @@ function SessionExercise(props){
             <p>0 / {ex.sets}</p>
             <SetInput exercise={exercise}/>
             <ul className='set-list'>
-                {/* {[...Array(Number(ex.sets) || 0)].map((s, i) => (
-                    <WeightReps key={i}/>
-                ))} */}
             </ul>
         </section>
     )

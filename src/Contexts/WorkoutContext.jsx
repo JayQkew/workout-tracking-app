@@ -27,13 +27,31 @@ export function WorkoutProvider({ children }){
         }
     }
 
+    function addNewTrackToExercise(exercise) {
+        const date = new Date();
+        const newTrack = {
+            date: date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate(),
+            sets: []
+        }
+        session.exercises = session.exercises.map(ex => {
+            if (ex.id === exercise.id) {
+                return {
+                    ...ex,
+                    track: [...(ex.track || []), newTrack]
+                };
+            }
+            return ex;
+        });
+    }
+
     return (
         <WorkoutContext.Provider value={{ 
                 plan,
                 setPlan, 
                 allPlans, 
                 session, 
-                setNewSession
+                setNewSession,
+                addNewTrackToExercise
             }}>
             {children}
         </WorkoutContext.Provider>
