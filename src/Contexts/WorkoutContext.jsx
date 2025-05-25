@@ -28,7 +28,13 @@ export function WorkoutProvider({ children }){
     }
 
     return (
-        <WorkoutContext.Provider value={{ plan, setPlan, allPlans, session, setNewSession }}>
+        <WorkoutContext.Provider value={{ 
+                plan,
+                setPlan, 
+                allPlans, 
+                session, 
+                setNewSession
+            }}>
             {children}
         </WorkoutContext.Provider>
     );
