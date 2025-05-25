@@ -50,13 +50,14 @@ function WeightRepsInput(props){
         const updatedSession = { ...session, exercises: updatedExercises };
 
         setNewSession(updatedSession);
+        setWeightReps({ weight: '', reps: '' });
     }
 
     return(
         <section className="set-input-container">
-            <input type="number" onChange={handleWeightChange}/>
+            <input type="number" value={weightReps.weight} onChange={handleWeightChange}/>
             <p>x</p>
-            <input type="number" onChange={handleRepsChange}/>
+            <input type="number" value={weightReps.reps} onChange={handleRepsChange}/>
             <button className="add-set-btn" onClick={handleAddSet}>+</button>
         </section>
     )

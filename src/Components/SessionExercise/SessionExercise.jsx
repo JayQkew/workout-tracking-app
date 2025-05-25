@@ -12,7 +12,7 @@ function SessionExercise(props){
 
     const date = new Date();
     const today = date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate()
-    const todayTrack = ex.track?.find(t => t.date === today);
+    const todayTrack = ex.track?.find(t => t.date === today) || { date: today, sets: [] };
     const trackCount = todayTrack ? todayTrack.sets.length : 0;
     return(
         <section className="exercise-card">
@@ -20,14 +20,9 @@ function SessionExercise(props){
             <p>{trackCount} / {ex.sets}</p>
             <WeightRepsInput exercise={exercise}/>
             <ul className='set-list'>
-                    {exercise.track?.map((t, index) => (
-                        <li key={index} className='set-item'>
-                            <p className='set-date'>{t.date}</p>
-                            {t.sets.map((s, sIndex) => (
-                                <WeightReps key={sIndex} weightReps={s}/>
-                            ))}
-                        </li>
-                    ))}
+                {todayTrack.sets.map((s, i) => (
+                    <WeightReps key={i} weightReps={s}/>
+                ))}
             </ul>
         </section>
     )
