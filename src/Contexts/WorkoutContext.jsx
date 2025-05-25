@@ -14,7 +14,7 @@ export function WorkoutProvider({ children }){
         setAllPlans(prevPlans =>
             prevPlans.map(p => p.id === newPlan.id ? newPlan : p)
         );
-        setSession(plan.sessions[0])
+        setSession(newPlan.sessions[0])
     }
 
     function setNewSession(newSession){
@@ -32,8 +32,9 @@ export function WorkoutProvider({ children }){
         const newTrack = {
             date: date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate(),
             sets: []
-        }
-        session.exercises = session.exercises.map(ex => {
+        };
+        // Create updated exercises array
+        const updatedExercises = session.exercises.map(ex => {
             if (ex.id === exercise.id) {
                 return {
                     ...ex,
@@ -42,6 +43,9 @@ export function WorkoutProvider({ children }){
             }
             return ex;
         });
+        // Create updated session object
+        const updatedSession = { ...session, exercises: updatedExercises };
+        setNewSession(updatedSession);
     }
 
     return (

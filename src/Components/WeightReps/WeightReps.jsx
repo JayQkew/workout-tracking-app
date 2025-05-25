@@ -1,12 +1,9 @@
 import './WeightReps.css'
 
-function WeightReps(){
+function WeightReps(props){
+    const { weightReps } = props;
     return (
-        <li className='complete-set'>
-            <p>Weight</p>
-            <p>x</p>
-            <p>Reps</p>
-        </li>
+        <p>{weightReps.weight} x {weightReps.reps}</p>
     )
 }
 
