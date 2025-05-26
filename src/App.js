@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { isDesktop } from 'react-device-detect';
 
 import Header from './Components/Header/Header';
 import Home from './Pages/Home';

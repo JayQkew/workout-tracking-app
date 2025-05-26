@@ -1,4 +1,4 @@
-import './PageContent.css'
+import '../Styles/PageLayout.css';
 
 import PageHeader from "../Components/PageHeader/PageHeader";
 import AllPlans from "../Components/AllPlans/AllPlans";
