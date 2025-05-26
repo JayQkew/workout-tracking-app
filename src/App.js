@@ -3,7 +3,6 @@ import { isDesktop } from 'react-device-detect';
 
 import Header from './Components/Header/Header';
 import Home from './Pages/Home';
-import Settings from './Pages/Settings';
 import Error from './Pages/Error';
 
 import Plan from './Pages/Desktop/Plan';
@@ -27,7 +26,6 @@ function App() {
         <Route path='/plan' element={isDesktop ? <Plan/> : <Plans/>}/>
         <Route path='/plan/edit' element={isDesktop ? <Plan/> : <EditPlans/>}/>
         <Route path='/stat' element={isDesktop ? <Stat/> : <Stats/>}/>
-        <Route path='/settings' element={<Settings/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
     </BrowserRouter>

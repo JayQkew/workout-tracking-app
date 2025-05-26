@@ -40,12 +40,7 @@ function Header(){
               </li>
             </ul>
           </nav>
-            <NavLink 
-              to="/settings" 
-              className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
-            >
-              Settings
-            </NavLink>
+            <button>Theme</button>
         </header>
     )
 }
