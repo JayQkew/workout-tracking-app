@@ -6,7 +6,7 @@ function WeightRepsInput(props){
     const { exercise } = props;
     const { session, addNewTrackToExercise, setNewSession } = useWorkout();
 
-    const [weightReps, setWeightReps] = useState({ weight: 0, reps: 0 });
+    const [weightReps, setWeightReps] = useState({ weight: '', reps: '' });
 
 
     function handleWeightChange(e){

@@ -1,7 +1,11 @@
-.complete-set{
+.weight-reps{
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.weight-reps span{
+    margin-inline: 1rem;
 }

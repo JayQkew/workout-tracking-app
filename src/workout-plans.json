@@ -282,310 +282,310 @@
     ]
   },
   {
-  "id": "1716541213600",
-  "name": "Upper Lower Split",
-  "type": "cycle",
-  "date": "2025 06 10",
-  "sessions": [
-    {
-      "id": "1716541213601",
-      "name": "Upper A",
-      "type": "gym",
-      "exercises": [
-        {
-          "id": "1716541213602",
-          "name": "Barbell Bench Press",
-          "sets": 4,
-          "track": [
-            {
-              "date": "2025 06 10",
-              "sets": [
-                { "weight": 65, "reps": 10 },
-                { "weight": 75, "reps": 8 },
-                { "weight": 80, "reps": 6 },
-                { "weight": 85, "reps": 4 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213603",
-          "name": "Pull-Up",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 10",
-              "sets": [
-                { "weight": 0, "reps": 10 },
-                { "weight": 0, "reps": 8 },
-                { "weight": 0, "reps": 6 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213604",
-          "name": "Seated Row",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 10",
-              "sets": [
-                { "weight": 40, "reps": 12 },
-                { "weight": 45, "reps": 10 },
-                { "weight": 50, "reps": 8 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213605",
-          "name": "Dumbbell Shoulder Press",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 10",
-              "sets": [
-                { "weight": 18, "reps": 10 },
-                { "weight": 20, "reps": 8 },
-                { "weight": 22, "reps": 6 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213606",
-          "name": "Barbell Curl",
-          "sets": 2,
-          "track": [
-            {
-              "date": "2025 06 10",
-              "sets": [
-                { "weight": 20, "reps": 12 },
-                { "weight": 22, "reps": 10 }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1716541213607",
-      "name": "Lower A",
-      "type": "gym",
-      "exercises": [
-        {
-          "id": "1716541213608",
-          "name": "Back Squat",
-          "sets": 4,
-          "track": [
-            {
-              "date": "2025 06 11",
-              "sets": [
-                { "weight": 90, "reps": 10 },
-                { "weight": 100, "reps": 8 },
-                { "weight": 110, "reps": 6 },
-                { "weight": 120, "reps": 4 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213609",
-          "name": "Romanian Deadlift",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 11",
-              "sets": [
-                { "weight": 60, "reps": 12 },
-                { "weight": 70, "reps": 10 },
-                { "weight": 80, "reps": 8 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213610",
-          "name": "Leg Press",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 11",
-              "sets": [
-                { "weight": 140, "reps": 15 },
-                { "weight": 160, "reps": 12 },
-                { "weight": 180, "reps": 10 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213611",
-          "name": "Standing Calf Raise",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 11",
-              "sets": [
-                { "weight": 35, "reps": 15 },
-                { "weight": 40, "reps": 12 },
-                { "weight": 45, "reps": 10 }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1716541213612",
-      "name": "Upper B",
-      "type": "gym",
-      "exercises": [
-        {
-          "id": "1716541213613",
-          "name": "Incline Bench Press",
-          "sets": 4,
-          "track": [
-            {
-              "date": "2025 06 13",
-              "sets": [
-                { "weight": 55, "reps": 10 },
-                { "weight": 60, "reps": 8 },
-                { "weight": 65, "reps": 6 },
-                { "weight": 70, "reps": 4 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213614",
-          "name": "Chest Supported Row",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 13",
-              "sets": [
-                { "weight": 35, "reps": 12 },
-                { "weight": 40, "reps": 10 },
-                { "weight": 45, "reps": 8 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213615",
-          "name": "Lateral Raise",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 13",
-              "sets": [
-                { "weight": 10, "reps": 15 },
-                { "weight": 12, "reps": 12 },
-                { "weight": 14, "reps": 10 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213616",
-          "name": "Triceps Rope Pushdown",
-          "sets": 2,
-          "track": [
-            {
-              "date": "2025 06 13",
-              "sets": [
-                { "weight": 25, "reps": 15 },
-                { "weight": 30, "reps": 12 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213617",
-          "name": "Hammer Curl",
-          "sets": 2,
-          "track": [
-            {
-              "date": "2025 06 13",
-              "sets": [
-                { "weight": 14, "reps": 12 },
-                { "weight": 16, "reps": 10 }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1716541213618",
-      "name": "Lower B",
-      "type": "gym",
-      "exercises": [
-        {
-          "id": "1716541213619",
-          "name": "Front Squat",
-          "sets": 4,
-          "track": [
-            {
-              "date": "2025 06 14",
-              "sets": [
-                { "weight": 70, "reps": 10 },
-                { "weight": 80, "reps": 8 },
-                { "weight": 90, "reps": 6 },
-                { "weight": 95, "reps": 4 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213620",
-          "name": "Leg Curl",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 14",
-              "sets": [
-                { "weight": 30, "reps": 15 },
-                { "weight": 35, "reps": 12 },
-                { "weight": 40, "reps": 10 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213621",
-          "name": "Glute Bridge",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 14",
-              "sets": [
-                { "weight": 40, "reps": 12 },
-                { "weight": 50, "reps": 10 },
-                { "weight": 60, "reps": 8 }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "1716541213622",
-          "name": "Seated Calf Raise",
-          "sets": 3,
-          "track": [
-            {
-              "date": "2025 06 14",
-              "sets": [
-                { "weight": 25, "reps": 15 },
-                { "weight": 30, "reps": 12 },
-                { "weight": 35, "reps": 10 }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+    "id": "1716541213600",
+    "name": "Upper Lower Split",
+    "type": "cycle",
+    "date": "2025 06 10",
+    "sessions": [
+      {
+        "id": "1716541213601",
+        "name": "Upper A",
+        "type": "gym",
+        "exercises": [
+          {
+            "id": "1716541213602",
+            "name": "Barbell Bench Press",
+            "sets": 4,
+            "track": [
+              {
+                "date": "2025 06 10",
+                "sets": [
+                  { "weight": 65, "reps": 10 },
+                  { "weight": 75, "reps": 8 },
+                  { "weight": 80, "reps": 6 },
+                  { "weight": 85, "reps": 4 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213603",
+            "name": "Pull-Up",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 10",
+                "sets": [
+                  { "weight": 0, "reps": 10 },
+                  { "weight": 0, "reps": 8 },
+                  { "weight": 0, "reps": 6 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213604",
+            "name": "Seated Row",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 10",
+                "sets": [
+                  { "weight": 40, "reps": 12 },
+                  { "weight": 45, "reps": 10 },
+                  { "weight": 50, "reps": 8 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213605",
+            "name": "Dumbbell Shoulder Press",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 10",
+                "sets": [
+                  { "weight": 18, "reps": 10 },
+                  { "weight": 20, "reps": 8 },
+                  { "weight": 22, "reps": 6 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213606",
+            "name": "Barbell Curl",
+            "sets": 2,
+            "track": [
+              {
+                "date": "2025 06 10",
+                "sets": [
+                  { "weight": 20, "reps": 12 },
+                  { "weight": 22, "reps": 10 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1716541213607",
+        "name": "Lower A",
+        "type": "gym",
+        "exercises": [
+          {
+            "id": "1716541213608",
+            "name": "Back Squat",
+            "sets": 4,
+            "track": [
+              {
+                "date": "2025 06 11",
+                "sets": [
+                  { "weight": 90, "reps": 10 },
+                  { "weight": 100, "reps": 8 },
+                  { "weight": 110, "reps": 6 },
+                  { "weight": 120, "reps": 4 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213609",
+            "name": "Romanian Deadlift",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 11",
+                "sets": [
+                  { "weight": 60, "reps": 12 },
+                  { "weight": 70, "reps": 10 },
+                  { "weight": 80, "reps": 8 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213610",
+            "name": "Leg Press",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 11",
+                "sets": [
+                  { "weight": 140, "reps": 15 },
+                  { "weight": 160, "reps": 12 },
+                  { "weight": 180, "reps": 10 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213611",
+            "name": "Standing Calf Raise",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 11",
+                "sets": [
+                  { "weight": 35, "reps": 15 },
+                  { "weight": 40, "reps": 12 },
+                  { "weight": 45, "reps": 10 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1716541213612",
+        "name": "Upper B",
+        "type": "gym",
+        "exercises": [
+          {
+            "id": "1716541213613",
+            "name": "Incline Bench Press",
+            "sets": 4,
+            "track": [
+              {
+                "date": "2025 06 13",
+                "sets": [
+                  { "weight": 55, "reps": 10 },
+                  { "weight": 60, "reps": 8 },
+                  { "weight": 65, "reps": 6 },
+                  { "weight": 70, "reps": 4 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213614",
+            "name": "Chest Supported Row",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 13",
+                "sets": [
+                  { "weight": 35, "reps": 12 },
+                  { "weight": 40, "reps": 10 },
+                  { "weight": 45, "reps": 8 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213615",
+            "name": "Lateral Raise",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 13",
+                "sets": [
+                  { "weight": 10, "reps": 15 },
+                  { "weight": 12, "reps": 12 },
+                  { "weight": 14, "reps": 10 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213616",
+            "name": "Triceps Rope Pushdown",
+            "sets": 2,
+            "track": [
+              {
+                "date": "2025 06 13",
+                "sets": [
+                  { "weight": 25, "reps": 15 },
+                  { "weight": 30, "reps": 12 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213617",
+            "name": "Hammer Curl",
+            "sets": 2,
+            "track": [
+              {
+                "date": "2025 06 13",
+                "sets": [
+                  { "weight": 14, "reps": 12 },
+                  { "weight": 16, "reps": 10 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1716541213618",
+        "name": "Lower B",
+        "type": "gym",
+        "exercises": [
+          {
+            "id": "1716541213619",
+            "name": "Front Squat",
+            "sets": 4,
+            "track": [
+              {
+                "date": "2025 06 14",
+                "sets": [
+                  { "weight": 70, "reps": 10 },
+                  { "weight": 80, "reps": 8 },
+                  { "weight": 90, "reps": 6 },
+                  { "weight": 95, "reps": 4 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213620",
+            "name": "Leg Curl",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 14",
+                "sets": [
+                  { "weight": 30, "reps": 15 },
+                  { "weight": 35, "reps": 12 },
+                  { "weight": 40, "reps": 10 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213621",
+            "name": "Glute Bridge",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 14",
+                "sets": [
+                  { "weight": 40, "reps": 12 },
+                  { "weight": 50, "reps": 10 },
+                  { "weight": 60, "reps": 8 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1716541213622",
+            "name": "Seated Calf Raise",
+            "sets": 3,
+            "track": [
+              {
+                "date": "2025 06 14",
+                "sets": [
+                  { "weight": 25, "reps": 15 },
+                  { "weight": 30, "reps": 12 },
+                  { "weight": 35, "reps": 10 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]
