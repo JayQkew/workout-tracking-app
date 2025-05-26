@@ -1,7 +1,9 @@
+import './SessionCard.css';
+
 function SessionCard(props){
-    const { session, id } = props
+    const { session } = props
     return(
-        <li key={id}>
+        <li className='session-card'>
             {session}
         </li>
     )

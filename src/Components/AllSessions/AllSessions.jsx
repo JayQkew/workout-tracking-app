@@ -9,7 +9,7 @@ function AllSessions(props){
             <h2>{plan.name}</h2>
             <ul className="sessions-list">
                 {plan.sessions.map((s, i) => {
-                    return <SessionCard session={s.name} id={i} key={i}/>
+                    return <SessionCard session={s.name} key={i}/>
                 })}
             </ul>
         </>

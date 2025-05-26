@@ -40,7 +40,7 @@ function Header(){
               </li>
             </ul>
           </nav>
-          <button className='nav-link theme-button'>Theme</button>
+          <p className='nav-link theme-button'>Theme</p>
         </header>
     )
 }
