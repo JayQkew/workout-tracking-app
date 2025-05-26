@@ -6,7 +6,7 @@ import { useWorkout } from '../../Contexts/WorkoutContext'
 
 function SessionExercise(props){
     const { exercise } = props
-    const { session } = useWorkout();
+    const { session, setNewSession } = useWorkout();
 
     const ex = session.exercises.find(e => e.id === exercise.id) || exercise;
 
@@ -14,6 +14,46 @@ function SessionExercise(props){
     const today = date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate()
     const todayTrack = ex.track?.find(t => t.date === today) || { date: today, sets: [] };
     const trackCount = todayTrack ? todayTrack.sets.length : 0;
+
+    function handleWeightChange(setIndex, value) {
+        // Update the weight for the set at setIndex
+        const updatedTrack = {
+            ...todayTrack,
+            sets: todayTrack.sets.map((set, i) =>
+                i === setIndex ? { ...set, weight: Number(value) } : set
+            )
+        };
+        // Update the exercise's track
+        const updatedTrackList = (ex.track || []).map(t =>
+            t.date === today ? updatedTrack : t
+        );
+        const updatedExercise = { ...ex, track: updatedTrackList };
+        // Update the session's exercises
+        const updatedExercises = session.exercises.map(e =>
+            e.id === ex.id ? updatedExercise : e
+        );
+        // Update the session
+        setNewSession({ ...session, exercises: updatedExercises });
+    }
+
+    function handleRepsChange(setIndex, value) {
+        // Update the reps for the set at setIndex
+        const updatedTrack = {
+            ...todayTrack,
+            sets: todayTrack.sets.map((set, i) =>
+                i === setIndex ? { ...set, reps: Number(value) } : set
+            )
+        };
+        const updatedTrackList = (ex.track || []).map(t =>
+            t.date === today ? updatedTrack : t
+        );
+        const updatedExercise = { ...ex, track: updatedTrackList };
+        const updatedExercises = session.exercises.map(e =>
+            e.id === ex.id ? updatedExercise : e
+        );
+        setNewSession({ ...session, exercises: updatedExercises });
+    }
+
     return(
         <section className="exercise-card">
             <h2>{ ex.name }</h2>
@@ -21,7 +61,11 @@ function SessionExercise(props){
             <WeightRepsInput exercise={exercise}/>
             <ul className='set-list'>
                 {todayTrack.sets.map((s, i) => (
-                    <WeightReps key={i} weightReps={s}/>
+                    <WeightReps 
+                        key={i} 
+                        weightReps={s}
+                        onWeightChange={value => handleWeightChange(i, value)}
+                        onRepsChange={value => handleRepsChange(i, value)}/>
                 ))}
             </ul>
         </section>

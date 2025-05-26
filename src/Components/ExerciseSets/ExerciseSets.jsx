@@ -24,7 +24,7 @@ function ExerciseSets(props){
     }
 
     return(
-        <li className='complete-set'>
+        <li className='weight-reps'>
             <div>
                 <input type="text" value={exercise.name} onChange={handleExerciseChange}/>
                 x
