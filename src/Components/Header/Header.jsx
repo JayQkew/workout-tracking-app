@@ -10,7 +10,7 @@ function Header(){
             to="/" 
             className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
           >
-            Logo
+            LightWeight
           </NavLink>
           <nav>
             <ul className="nav-menu">
