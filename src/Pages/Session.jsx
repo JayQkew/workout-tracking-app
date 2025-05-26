@@ -1,10 +1,10 @@
 import './PageContent.css'
 
-import PageHeader from '../../Components/PageHeader/PageHeader'
-import AllSessions from '../../Components/AllSessions/AllSessions'
-import SessionExercise from '../../Components/SessionExercise/SessionExercise'
+import PageHeader from '../Components/PageHeader/PageHeader'
+import AllSessions from '../Components/AllSessions/AllSessions'
+import SessionExercise from '../Components/SessionExercise/SessionExercise'
 
-import { useWorkout } from '../../Contexts/WorkoutContext'
+import { useWorkout } from '../Contexts/WorkoutContext'
 
 function Session(){
     const { plan, session } = useWorkout();

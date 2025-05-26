@@ -5,9 +5,9 @@ import Header from './Components/Header/Header';
 import Home from './Pages/Home';
 import Error from './Pages/Error';
 
-import Plan from './Pages/Desktop/Plan';
-import Session from './Pages/Desktop/Session';
-import Stat from './Pages/Desktop/Stat';
+import Plan from './Pages/Plan';
+import Session from './Pages/Session';
+import Stat from './Pages/Stat';
 
 function App() {
   return (
