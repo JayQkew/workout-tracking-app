@@ -8,8 +8,9 @@
 
 aside{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 30%;
     height: fit-content;
     padding: 1rem;
@@ -20,8 +21,8 @@ aside{
 .main-cards{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     width: 70%;
     gap: 1rem;
 }

@@ -8,7 +8,7 @@ function Header(){
         <header className='app-header'>
           <NavLink 
             to="/" 
-            className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+            className={(({isActive}) => isActive ? "nav-link app-logo active" : "nav-link app-logo")}
           >
             LightWeight
           </NavLink>
@@ -40,7 +40,7 @@ function Header(){
               </li>
             </ul>
           </nav>
-            <button>Theme</button>
+          <button className='nav-link theme-button'>Theme</button>
         </header>
     )
 }
