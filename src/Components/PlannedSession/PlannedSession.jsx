@@ -29,19 +29,29 @@ function PlannedSession(props){
 
     return(
         <section className="session-plan-card">
-            <input 
-                type="text" 
-                value={session.name}
-                onChange={handleChange}/>
-            <button onClick={handleDeleteSession}>Delete Session</button>    
-            <ul className="exercise-list">
-                {session.exercises.map((e, i) => 
-                    <ExerciseSets 
-                        exercise={e}
-                        session={session}
-                        key={i}/>)}
-            </ul> 
-            <button onClick={handleAddExercise}>Add Exercise</button>
+            {
+                session.type === 'rest' ?
+                <>
+                    <h2 className="session-name rest-day">Rest</h2>
+                    <button onClick={handleDeleteSession}>Delete Session</button>    
+                </> 
+                : <>
+                    <input 
+                        type="text" 
+                        value={session.name}
+                        onChange={handleChange}/>
+                    <button onClick={handleDeleteSession}>Delete Session</button>    
+                    <ul className="exercise-list">
+                        {session.exercises.map((e, i) => 
+                            <ExerciseSets 
+                                exercise={e}
+                                session={session}
+                                key={i}/>)}
+                    </ul> 
+                    <button onClick={handleAddExercise}>Add Exercise</button>
+                </>
+            }
+
         </section>
     )
 }
