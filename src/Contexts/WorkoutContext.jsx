@@ -54,6 +54,7 @@ export function WorkoutProvider({ children }){
                 setPlan, 
                 allPlans, 
                 session, 
+                setSession,
                 setNewSession,
                 addNewTrackToExercise
             }}>
