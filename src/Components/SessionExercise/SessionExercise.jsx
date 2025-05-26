@@ -16,28 +16,23 @@ function SessionExercise(props){
     const trackCount = todayTrack ? todayTrack.sets.length : 0;
 
     function handleWeightChange(setIndex, value) {
-        // Update the weight for the set at setIndex
         const updatedTrack = {
             ...todayTrack,
             sets: todayTrack.sets.map((set, i) =>
                 i === setIndex ? { ...set, weight: Number(value) } : set
             )
         };
-        // Update the exercise's track
         const updatedTrackList = (ex.track || []).map(t =>
             t.date === today ? updatedTrack : t
         );
         const updatedExercise = { ...ex, track: updatedTrackList };
-        // Update the session's exercises
         const updatedExercises = session.exercises.map(e =>
             e.id === ex.id ? updatedExercise : e
         );
-        // Update the session
         setNewSession({ ...session, exercises: updatedExercises });
     }
 
     function handleRepsChange(setIndex, value) {
-        // Update the reps for the set at setIndex
         const updatedTrack = {
             ...todayTrack,
             sets: todayTrack.sets.map((set, i) =>
@@ -54,6 +49,21 @@ function SessionExercise(props){
         setNewSession({ ...session, exercises: updatedExercises });
     }
 
+    function handleDeleteSet(setIndex) {
+    const updatedTrack = {
+        ...todayTrack,
+        sets: todayTrack.sets.filter((_, i) => i !== setIndex)
+    };
+    const updatedTrackList = (ex.track || []).map(t =>
+        t.date === today ? updatedTrack : t
+    );
+    const updatedExercise = { ...ex, track: updatedTrackList };
+    const updatedExercises = session.exercises.map(e =>
+        e.id === ex.id ? updatedExercise : e
+    );
+    setNewSession({ ...session, exercises: updatedExercises });
+}
+
     return(
         <section className="exercise-card">
             <h2>{ ex.name }</h2>
@@ -65,7 +75,9 @@ function SessionExercise(props){
                         key={i} 
                         weightReps={s}
                         onWeightChange={value => handleWeightChange(i, value)}
-                        onRepsChange={value => handleRepsChange(i, value)}/>
+                        onRepsChange={value => handleRepsChange(i, value)}
+                        onDelete={() => handleDeleteSet(i)}/>
+                        
                 ))}
             </ul>
         </section>
