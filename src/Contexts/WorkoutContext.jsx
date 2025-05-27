@@ -33,7 +33,7 @@ export function WorkoutProvider({ children }){
             date: date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate(),
             sets: []
         };
-        // Create updated exercises array
+
         const updatedExercises = session.exercises.map(ex => {
             if (ex.id === exercise.id) {
                 return {
@@ -43,7 +43,7 @@ export function WorkoutProvider({ children }){
             }
             return ex;
         });
-        // Create updated session object
+        
         const updatedSession = { ...session, exercises: updatedExercises };
         setNewSession(updatedSession);
     }
