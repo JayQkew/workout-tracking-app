@@ -4,8 +4,17 @@ import { useWorkout } from "./WorkoutContext";
 const StatsContext = createContext();
 
 export function StatsProvider({ children }) {
+    const { allPlans } = useWorkout();
+    const [metrics, setMetrics] = useState('weight');
+    const [exercises, setExercises] = useState([]);
+
     return (
-        <StatsContext.Provider value={{}}>
+        <StatsContext.Provider value={{
+            metrics,
+            setMetrics,
+            exercises,
+            setExercises
+        }}>
             {children}
         </StatsContext.Provider>
     );
