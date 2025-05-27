@@ -7,7 +7,7 @@ export function StatsProvider({ children }) {
     const { allPlans } = useWorkout();
     const [metrics, setMetrics] = useState('weight');
     const [allExercises, setAllExercises] = useState([]); // get this at the start
-    const [exercises, setExercises] = useState([allExercises[0]]); // default to the first exercise in allExercises
+    const [exercises, setExercises] = useState([]); // default to the first exercise in allExercises
     const [availableExercises, setAvailableExercises] = useState([]);
 
     useEffect(() => {

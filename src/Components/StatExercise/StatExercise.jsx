@@ -21,14 +21,6 @@ function StatExercise(props) {
                     <option key={index} value={ex}>{ex}</option>
                 ))}
             </select>
-            <ul>
-                {exercises.map((exercise, index) => (
-                    <li key={index}>
-                        {exercise}
-                        <button onClick={() => setExercises(exercises.filter(e => e !== exercise))}>x</button>
-                    </li>
-                ))}
-            </ul>
         </div>
     );
 }
