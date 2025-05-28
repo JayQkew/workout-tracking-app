@@ -2,6 +2,7 @@ import '../Styles/PageLayout.css';
 
 import StatSettings from '../Components/StatSettings/StatSettings';
 import PageHeader from "../Components/PageHeader/PageHeader";
+import StatGraph from '../Components/StatGraph/StatGraph';
 
 function Stat(){
     return(
@@ -12,7 +13,7 @@ function Stat(){
                     <StatSettings />
                 </aside>
                 <section className="main-cards">
-
+                    <StatGraph />
                 </section>
             </section>
         </main>
