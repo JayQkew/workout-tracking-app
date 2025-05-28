@@ -53,65 +53,17 @@ function StatGraph() {
         // Color scale for exercises
         const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-        // For each exercise
+        // Draw dots for each set
         exerciseData.forEach((ex, i) => {
-            // Group data by date
-            const grouped = d3.groups(ex.data, d => d.date);
-
-            grouped.forEach(([dateStr, sets]) => {
-                const values = sets.map(s => s[metrics]).sort(d3.ascending);
-                if (values.length === 0) return;
-
-                // Calculate box plot stats
-                const min = d3.min(values);
-                const max = d3.max(values);
-                const q1 = d3.quantile(values, 0.25);
-                const median = d3.quantile(values, 0.5);
-                const q3 = d3.quantile(values, 0.75);
-
-                const date = parseDate(dateStr);
-                const boxWidth = x.bandwidth() / exerciseData.length;
-                const xPos = x(date) + i * boxWidth;
-
-                // Draw box
-                svg.append("rect")
-                    .attr("x", xPos)
-                    .attr("y", y(q3))
-                    .attr("width", boxWidth)
-                    .attr("height", y(q1) - y(q3))
-                    .attr("stroke", color(i))
+            ex.data.forEach(set => {
+                const date = parseDate(set.date);
+                if (!date) return;
+                svg.append("circle")
+                    .attr("cx", x(date) + x.bandwidth() / 2)
+                    .attr("cy", y(set[metrics]))
+                    .attr("r", 6)
                     .attr("fill", color(i))
-                    .attr("opacity", 0.5);
-
-                // Draw median line
-                svg.append("line")
-                    .attr("x1", xPos)
-                    .attr("x2", xPos + boxWidth)
-                    .attr("y1", y(median))
-                    .attr("y2", y(median))
-                    .attr("stroke", "black");
-
-                // Draw min/max whiskers
-                svg.append("line")
-                    .attr("x1", xPos + boxWidth / 2)
-                    .attr("x2", xPos + boxWidth / 2)
-                    .attr("y1", y(min))
-                    .attr("y2", y(max))
-                    .attr("stroke", color(i));
-
-                // Whisker caps
-                svg.append("line")
-                    .attr("x1", xPos + boxWidth * 0.25)
-                    .attr("x2", xPos + boxWidth * 0.75)
-                    .attr("y1", y(min))
-                    .attr("y2", y(min))
-                    .attr("stroke", color(i));
-                svg.append("line")
-                    .attr("x1", xPos + boxWidth * 0.25)
-                    .attr("x2", xPos + boxWidth * 0.75)
-                    .attr("y1", y(max))
-                    .attr("y2", y(max))
-                    .attr("stroke", color(i));
+                    .attr("opacity", 0.8);
             });
 
             // Add legend
@@ -123,6 +75,7 @@ function StatGraph() {
         });
 
     }, [exerciseData, metrics]);
+
     return <div id="stat-graph"></div>
 }
 
