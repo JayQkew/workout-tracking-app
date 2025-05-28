@@ -8,11 +8,9 @@ import { StatsProvider } from './Contexts/StatsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <WorkoutProvider>
       <StatsProvider>
         <App />
       </StatsProvider>
     </WorkoutProvider>
-  </React.StrictMode>
 );

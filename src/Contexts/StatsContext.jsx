@@ -26,7 +26,6 @@ export function StatsProvider({ children }) {
             name: exerciseName,
             data: getExerciseData(exerciseName)
         })));
-        console.log(exerciseData);
     }, [allPlans, exercises]);
 
     function getExerciseData(exerciseName) {
