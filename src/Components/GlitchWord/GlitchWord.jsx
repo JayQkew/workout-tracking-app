@@ -30,7 +30,7 @@ function Work({children}) {
   }, []);
 
   return (
-    <p className='glitch-word' style={{ fontFamily: fonts[fontIndex], transition: 'font-family 0.3s' }}>
+    <p className='glitch-word' style={{ fontFamily: fonts[fontIndex] }}>
       {children}
     </p>
   );

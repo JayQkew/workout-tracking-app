@@ -6,7 +6,7 @@ function Home(){
         <>
             <header className="page-header landing-section">
                 <h1>Lets Get To <br/> <GlitchWord>Work</GlitchWord></h1>
-                <p>A light weight solution for workout tracking and planning</p>
+                <p className='subtitle'>A light weight solution for workout tracking and planning</p>
                 <button>Get Started</button>
             </header>
             <section>
