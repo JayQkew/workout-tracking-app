@@ -1,16 +1,18 @@
 @import url('./clash-grotesk.css');
 
 :root{
-    --light: #fffcf2ff;
-    --tan: #ccc5b9ff;
-    --brown: #403d39ff;
-    --dark: #252422ff;
-    --flame: #eb5e28ff;
+  color-scheme: light dark;
 
-    --text-color: light-dark(var(--dark), var(--light));
-    --background-color: light-dark(var(--light), var(--dark));
+  --light: #fffcf2ff;
+  --tan: #ccc5b9ff;
+  --brown: #403d39ff;
+  --dark: #252422ff;
+  --flame: #eb5e28ff;
 
-    --regular-font: 'ClashGrotesk-Regular', Arial, Helvetica, sans-serif;
+  --text-color: light-dark(var(--dark), var(--light));
+  --background-color: light-dark(var(--light), var(--dark));
+
+  --regular-font: 'ClashGrotesk-Regular', Arial, Helvetica, sans-serif;
 }
 
 ::selection {
@@ -19,7 +21,7 @@
 }
 
 body{
-    font-family: var(--regular-font);
-    color: var(--text-color);
-    background-color: var(--background-color);
+  font-family: var(--regular-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }

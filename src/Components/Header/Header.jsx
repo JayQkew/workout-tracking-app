@@ -1,25 +1,27 @@
 import './Header.css';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { isDesktop } from 'react-device-detect';
+import { ReactComponent as LightMode } from '../../Styles/noun-dark-theme-6404897.svg';
 
 function Header(){
     return(
         <header className='app-header'>
-          <NavLink 
-            to="/" 
-            className={(({isActive}) => isActive ? "nav-link app-logo active" : "nav-link app-logo")}
-          >
-            LightWeight
-          </NavLink>
           <nav>
             <ul className="nav-menu">
+              <li className="nav-item">
+                <NavLink 
+                  to="/" 
+                  className={(({isActive}) => isActive ? "nav-link active" : "nav-link app-logo")}
+                >
+                  Home
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink 
                   to="/plan" 
                   className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                 >
-                  {isDesktop ? "Plan" : "Plans"}
+                  Plan
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -27,7 +29,7 @@ function Header(){
                   to="/session" 
                   className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                 >
-                  {isDesktop ? "Session" : "Sessions"}
+                  Session
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -35,12 +37,16 @@ function Header(){
                   to="/stat" 
                   className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                 >
-                  {isDesktop ? "Stat" : "Stats"}
+                  Stat
                 </NavLink>
+              </li>
+              <li className="nav-item">
+                <div className="light-mode nav-link">
+                  <LightMode />
+                </div>
               </li>
             </ul>
           </nav>
-          <p className='nav-link theme-button'>Theme</p>
         </header>
     )
 }
