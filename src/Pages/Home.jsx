@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "../Components/PageHeader/PageHeader";
+import './Home.css';
+import Work from '../Components/Work/Work';
 
 function Home(){
     return(
         <>
-            <header className="page-header">
-                <h1>LightWeight</h1>
-                <p>a light weight solution for workout tracking and planning</p>
+            <header className="page-header landing-section">
+                <h1>Lets Get To <Work/></h1>
+                <p>A light weight solution for workout tracking and planning</p>
                 <button>Get Started</button>
             </header>
             <section>
