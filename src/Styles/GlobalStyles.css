@@ -1,4 +1,4 @@
-@import url('./css/clash-grotesk.css');
+@import url('./clash-grotesk.css');
 
 :root{
     --light: #fffcf2ff;
@@ -9,6 +9,8 @@
 
     --text-color: light-dark(var(--dark), var(--light));
     --background-color: light-dark(var(--light), var(--dark));
+
+    --regular-font: 'ClashGrotesk-Regular', Arial, Helvetica, sans-serif;
 }
 
 ::selection {
@@ -17,7 +19,7 @@
 }
 
 body{
-    font-family: 'ClashGrotesk-Regular', Arial, Helvetica, sans-serif;
+    font-family: var(--regular-font);
     color: var(--text-color);
     background-color: var(--background-color);
 }
