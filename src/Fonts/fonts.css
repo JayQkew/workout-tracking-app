@@ -373,3 +373,25 @@
   font-display: swap;
   font-style: normal;
 }
+
+/**
+* @license
+*
+* Font Family: Panchang
+* Designed by: Barbara Bigosinska, Hitesh Malaviya
+* URL: https://www.fontshare.com/fonts/panchang
+* © 2025 Indian Type Foundry
+*
+* Panchang Extrabold 
+
+*
+*/
+@font-face {
+  font-family: 'Panchang-Extrabold';
+  src: url('./fonts/Panchang-Extrabold.woff2') format('woff2'),
+       url('./fonts/Panchang-Extrabold.woff') format('woff'),
+       url('./fonts/Panchang-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
