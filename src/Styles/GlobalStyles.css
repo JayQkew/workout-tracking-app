@@ -11,6 +11,8 @@
   --background-color: var(--light);
 
   --regular-font: 'ClashGrotesk-Regular', Arial, Helvetica, sans-serif;
+
+  --border: 2px solid currentColor;
 }
 
 ::selection {
