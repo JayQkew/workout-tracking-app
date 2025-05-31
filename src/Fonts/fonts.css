@@ -109,3 +109,25 @@
   font-display: swap;
   font-style: normal;
 }
+
+/**
+* @license
+*
+* Font Family: Array
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/array
+* © 2025 Indian Type Foundry
+*
+* Array Bold 
+
+*
+*/
+@font-face {
+  font-family: 'Array-Bold';
+  src: url('./fonts/Array-Bold.woff2') format('woff2'),
+       url('./fonts/Array-Bold.woff') format('woff'),
+       url('./fonts/Array-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
