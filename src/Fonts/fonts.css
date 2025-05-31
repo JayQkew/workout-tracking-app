@@ -153,3 +153,69 @@
   font-display: swap;
   font-style: normal;
 }
+
+/**
+* @license
+*
+* Font Family: Aktura
+* Designed by: Gaetan Baehr
+* URL: https://www.fontshare.com/fonts/aktura
+* © 2025 Indian Type Foundry
+*
+* Aktura Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Aktura-Regular';
+  src: url('./fonts/Aktura-Regular.woff2') format('woff2'),
+       url('./fonts/Aktura-Regular.woff') format('woff'),
+       url('./fonts/Aktura-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Segment
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/segment
+* © 2025 Indian Type Foundry
+*
+* Segment Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Segment-Regular';
+  src: url('./fonts/Segment-Regular.woff2') format('woff2'),
+       url('./fonts/Segment-Regular.woff') format('woff'),
+       url('./fonts/Segment-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Trench Slab
+* Designed by: Shiva Nallaperumal
+* URL: https://www.fontshare.com/fonts/trench-slab
+* © 2025 Indian Type Foundry
+*
+* Trench Slab Bold 
+
+*
+*/
+@font-face {
+  font-family: 'TrenchSlab-Bold';
+  src: url('./fonts/TrenchSlab-Bold.woff2') format('woff2'),
+       url('./fonts/TrenchSlab-Bold.woff') format('woff'),
+       url('./fonts/TrenchSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
