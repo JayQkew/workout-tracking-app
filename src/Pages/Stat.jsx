@@ -1,3 +1,4 @@
+import '../Styles/GlobalStyles.css';
 import '../Styles/PageLayout.css';
 
 import StatSettings from '../Components/StatSettings/StatSettings';

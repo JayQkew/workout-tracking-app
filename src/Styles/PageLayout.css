@@ -21,8 +21,8 @@ aside{
 .main-cards{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     width: 70%;
     gap: 1rem;
 }

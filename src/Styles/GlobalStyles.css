@@ -1,0 +1,15 @@
+:root{
+    --light: #fffcf2ff;
+    --tan: #ccc5b9ff;
+    --brown: #403d39ff;
+    --dark: #252422ff;
+    --flame: #eb5e28ff;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --background-color: light-dark(var(--light), var(--dark));
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
