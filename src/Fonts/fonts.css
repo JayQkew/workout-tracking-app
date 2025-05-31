@@ -264,3 +264,112 @@
   font-style: normal;
 }
 
+/**
+* @license
+*
+* Font Family: Stardom
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/stardom
+* © 2025 Indian Type Foundry
+*
+* Stardom Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Stardom-Regular';
+  src: url('./fonts/Stardom-Regular.woff2') format('woff2'),
+       url('./fonts/Stardom-Regular.woff') format('woff'),
+       url('./fonts/Stardom-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Styro
+* Designed by: Aarya Purohit, Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/styro
+* © 2025 Indian Type Foundry
+*
+* Styro Black 
+
+*
+*/
+@font-face {
+  font-family: 'Styro-Black';
+  src: url('./fonts/Styro-Black.woff2') format('woff2'),
+       url('./fonts/Styro-Black.woff') format('woff'),
+       url('./fonts/Styro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Kihim
+* Designed by: Rocky Malaviya
+* URL: https://www.fontshare.com/fonts/kihim
+* © 2025 Indian Type Foundry
+*
+* Kihim Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Kihim-Regular';
+  src: url('./fonts/Kihim-Regular.woff2') format('woff2'),
+       url('./fonts/Kihim-Regular.woff') format('woff'),
+       url('./fonts/Kihim-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Kohinoor Zerone
+* Designed by: Satya Rajpurohit
+* URL: https://www.fontshare.com/fonts/kohinoor-zerone
+* © 2025 Indian Type Foundry
+*
+* Kohinoor Zerone Zero 
+
+*
+*/
+@font-face {
+  font-family: 'KohinoorZerone-Zero';
+  src: url('./fonts/KohinoorZerone-Zero.woff2') format('woff2'),
+       url('./fonts/KohinoorZerone-Zero.woff') format('woff'),
+       url('./fonts/KohinoorZerone-Zero.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Kola
+* Designed by: Jean-Baptiste Morizot
+* URL: https://www.fontshare.com/fonts/kola
+* © 2025 Indian Type Foundry
+*
+* Kola Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Kola-Regular';
+  src: url('./fonts/Kola-Regular.woff2') format('woff2'),
+       url('./fonts/Kola-Regular.woff') format('woff'),
+       url('./fonts/Kola-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
