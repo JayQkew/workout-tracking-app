@@ -1,11 +1,11 @@
 import './Home.css';
-import Work from '../Components/GlitchWord/GlitchWord';
+import GlitchWord from '../Components/GlitchWord/GlitchWord';
 
 function Home(){
     return(
         <>
             <header className="page-header landing-section">
-                <h1>Lets Get To <br/> <Work>Work</Work></h1>
+                <h1>Lets Get To <br/> <GlitchWord>Work</GlitchWord></h1>
                 <p>A light weight solution for workout tracking and planning</p>
                 <button>Get Started</button>
             </header>
