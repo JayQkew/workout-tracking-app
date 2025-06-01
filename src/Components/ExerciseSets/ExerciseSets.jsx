@@ -1,4 +1,5 @@
 import { useWorkout } from "../../Contexts/WorkoutContext"
+import './ExerciseSets.css'
 
 function ExerciseSets(props){
     const { exercise, session } = props
@@ -25,12 +26,20 @@ function ExerciseSets(props){
 
     return(
         <li className='weight-reps'>
-            <div>
-                <input type="text" value={exercise.name} onChange={handleExerciseChange}/>
-                x
-                <input type="number" value={exercise.sets} onChange={handleSetsChange}/>
+            <div className="exercise-inputs">
+                <input 
+                    type="text" 
+                    value={exercise.name} 
+                    onChange={handleExerciseChange}
+                    placeholder="Exercise"/>
+                <p>x</p>
+                <input 
+                    type="number" 
+                    value={exercise.sets} 
+                    onChange={handleSetsChange}
+                    placeholder="0"/>
             </div>
-            <button onClick={handleDeleteSet}>x</button>
+            <button className="delete-exercise-btn" onClick={handleDeleteSet}>x</button>
         </li>
     )
 }

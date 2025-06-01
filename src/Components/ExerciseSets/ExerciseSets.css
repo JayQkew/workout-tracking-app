@@ -1,0 +1,36 @@
+.exercise-inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.exercise-inputs input {
+    font-family: var(--regular-font);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    margin-inline: 1rem;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-exercise-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    color: var(--flame);
+    cursor: pointer;
+}
