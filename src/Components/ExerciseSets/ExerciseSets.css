@@ -34,3 +34,28 @@
     color: var(--flame);
     cursor: pointer;
 }
+
+.add-exercise-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    background-color: transparent;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.add-exercise-btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 0 currentColor;
+}
+
+.add-exercise-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 0 currentColor;
+}
