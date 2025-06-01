@@ -37,3 +37,30 @@ body.dark {
   --background-color: var(--dark);
   color-scheme: dark;
 }
+
+.action-btn{
+  font-family: 'ClashGrotesk-SemiBold', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--flame);
+  border: transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;  
+  cursor: pointer;
+  box-shadow: 0 0 0 currentColor;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 0 currentColor;
+}
+
+.action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 0 currentColor;
+}

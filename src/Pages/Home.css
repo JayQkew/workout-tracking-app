@@ -17,3 +17,60 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+.home-section h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.home-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.home-section ul li{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.home-section ul li:hover{
+    background-color: var(--flame);
+    color: var(--background-color);
+    flex-grow: 3;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.home-section p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
