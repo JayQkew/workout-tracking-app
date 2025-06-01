@@ -8,7 +8,7 @@ function AllPlans(){
 
     return(
         <>
-            <h2>Plans</h2>
+            <h2 className='plans-header'>All Plans</h2>
             <ul className="plans-list">
                 {allPlans.map((p, i) => {
                     return <PlanCard plan={p} key={i}/>
