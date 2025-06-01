@@ -1,0 +1,28 @@
+.sticker{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: var(--border);
+    transition: all 0.2s;
+}
+
+.gym-session, .rest-session{
+    transform: translateY(0);
+}
+
+.gym-session{
+    color: var(--flame);
+}
+
+
+.plan-card:hover .gym-session{
+    color: var(--flame);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 0 var(--flame);
+    border: 2px solid var(--flame);
+}
