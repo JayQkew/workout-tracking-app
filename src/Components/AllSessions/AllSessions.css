@@ -9,3 +9,14 @@
     padding: 0px;
     margin: 0px;
 }
+
+.sessions-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    padding: 0;
+}

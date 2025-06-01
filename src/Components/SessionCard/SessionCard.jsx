@@ -11,7 +11,7 @@ function SessionCard(props){
     }
 
     return(
-        <li className='session-card' onClick={handleClick}>
+        <li className={session.type === 'gym' ? 'gym-session-card session-card' : 'session-card'} onClick={handleClick}>
             {session.name}
         </li>
     )
