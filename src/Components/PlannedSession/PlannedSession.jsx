@@ -36,11 +36,14 @@ function PlannedSession(props){
                     <button onClick={handleDeleteSession}>Delete Session</button>    
                 </> 
                 : <>
-                    <input 
-                        type="text" 
-                        value={session.name}
-                        onChange={handleChange}/>
-                    <button onClick={handleDeleteSession}>Delete Session</button>    
+                    <div className="session-header">
+                        <input 
+                            type="text" 
+                            value={session.name}
+                            onChange={handleChange}
+                        />
+                        <button className="delete-btn" onClick={handleDeleteSession}>-</button>    
+                    </div>
                     <ul className="exercise-list">
                         {session.exercises.map((e, i) => 
                             <ExerciseSets 
