@@ -12,9 +12,27 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-inline: 1rem;
+    gap: 1rem;
 }
 
-.weight-reps span{
+.weight-reps-display input{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--regular-font);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.weight-reps-display span{
+    font-size: 1rem;
     margin-inline: 1rem;
     width: 100%;
     text-align: center;

@@ -55,9 +55,19 @@ function WeightRepsInput(props){
 
     return(
         <section className="set-input-container">
-            <input type="number" value={weightReps.weight} onChange={handleWeightChange}/>
-            <p>x</p>
-            <input type="number" value={weightReps.reps} onChange={handleRepsChange}/>
+            <div className="input-area">
+                <input 
+                    type="number" 
+                    value={weightReps.weight} 
+                    placeholder='weight'
+                    onChange={handleWeightChange}/>
+                <p>x</p>
+                <input 
+                    type="number" 
+                    value={weightReps.reps} 
+                    placeholder='reps'
+                    onChange={handleRepsChange}/>
+            </div>
             <button className="add-set-btn" onClick={handleAddSet}>+</button>
         </section>
     )

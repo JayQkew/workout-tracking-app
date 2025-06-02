@@ -21,6 +21,7 @@ function WeightReps(props){
                     <input
                         type="number"
                         value={weightReps.weight}
+                        placeholder='weight'
                         onClick={e => e.stopPropagation()}
                         onChange={(e) => onWeightChange(e.target.value)}
                     />
@@ -28,6 +29,7 @@ function WeightReps(props){
                     <input
                         type="number"
                         value={weightReps.reps}
+                        placeholder='reps'
                         onClick={e => e.stopPropagation()}
                         onChange={(e) => onRepsChange(e.target.value)}
                     />
