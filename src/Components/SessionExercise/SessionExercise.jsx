@@ -66,7 +66,7 @@ function SessionExercise(props){
 
     return(
         <section className="exercise-card">
-            <h2>{ ex.name }</h2>
+            <h2 className='exercise-name'>{ ex.name }</h2>
             <p>{trackCount} / {ex.sets}</p>
             <WeightRepsInput exercise={exercise}/>
             <ul className='set-list'>

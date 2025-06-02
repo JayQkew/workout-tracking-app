@@ -14,3 +14,7 @@
     list-style: none;
     padding: 0;
 }
+
+.exercise-name{
+    text-decoration: 3px underline solid var(--flame);
+}

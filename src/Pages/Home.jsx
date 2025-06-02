@@ -16,11 +16,6 @@ function Home(){
                     <li>View your progress</li>
                 </ul>
             </section>
-            <section className='home-section'>
-                <h2>Organised and Minimalistic</h2>
-                <p>Jump right in! The weights wait for no-one</p>
-                <button className='action-btn'>Yessir!</button>
-            </section>
         </>
     )
 }

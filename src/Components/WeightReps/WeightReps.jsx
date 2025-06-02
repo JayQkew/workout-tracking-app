@@ -17,24 +17,30 @@ function WeightReps(props){
     return (
         editMode ? (
             <li className='weight-reps' onClick={handleEditClick}>
-                <input
-                    type="number"
-                    value={weightReps.weight}
-                    onClick={e => e.stopPropagation()}
-                    onChange={(e) => onWeightChange(e.target.value)}
-                />
-                <p>x</p>
-                <input
-                    type="number"
-                    value={weightReps.reps}
-                    onClick={e => e.stopPropagation()}
-                    onChange={(e) => onRepsChange(e.target.value)}
-                />
+                <div className='weight-reps-display'>
+                    <input
+                        type="number"
+                        value={weightReps.weight}
+                        onClick={e => e.stopPropagation()}
+                        onChange={(e) => onWeightChange(e.target.value)}
+                    />
+                    <p>x</p>
+                    <input
+                        type="number"
+                        value={weightReps.reps}
+                        onClick={e => e.stopPropagation()}
+                        onChange={(e) => onRepsChange(e.target.value)}
+                    />
+                </div>
+                <button onClick={handleEditClick}>Done</button>
                 <button onClick={handleDeleteClick}>Delete</button>
             </li>
         ) : (
-            <li className='weight-reps' onClick={handleEditClick}>
-                <span>{weightReps.weight} kg</span> <p>x</p> <span>{weightReps.reps} reps</span>
+            <li className='weight-reps' >
+                <div className='weight-reps-display'>
+                    <span>{weightReps.weight} kg</span> <p>x</p> <span>{weightReps.reps} reps</span>
+                </div>
+                <button onClick={handleEditClick}>Edit</button>
             </li>
         )
     )
