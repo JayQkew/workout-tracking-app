@@ -33,7 +33,7 @@ function PlannedSession(props){
                 session.type === 'rest' ?
                 <>
                     <h2 className="session-name rest-day">Rest</h2>
-                    <button onClick={handleDeleteSession}>Delete Session</button>    
+                    <button className="add-exercise-btn delete-rest" onClick={handleDeleteSession}>Delete Session</button>    
                 </> 
                 : <>
                     <div className="session-header">

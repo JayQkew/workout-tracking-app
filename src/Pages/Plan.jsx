@@ -33,8 +33,10 @@ function Plan(){
                             session={s} 
                             key={i}/>
                     ))}
-                    <button onClick={() => handleAddSession('gym')}>Add Session</button>
-                    <button onClick={() => handleAddSession('rest')}>Add Rest Day</button>
+                    <div className='add-session-btns'>
+                        <button className='add-exercise-btn add-session-btn' onClick={() => handleAddSession('gym')}>Add Session</button>
+                        <button className='add-exercise-btn add-session-btn' onClick={() => handleAddSession('rest')}>Add Rest Day</button>
+                    </div>
                 </section>
             </section>
         </main>
