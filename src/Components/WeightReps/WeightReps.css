@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.weight-reps button{
+    margin: 0 1rem;
+}
+
 .weight-reps-display{
     display: flex;
     flex-direction: row;
