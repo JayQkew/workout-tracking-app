@@ -42,7 +42,7 @@ function StatSettings() {
                     {exercises.map((exercise, index) => (
                         <li className='selected-exercise' key={index}>
                             {exercise}
-                            <button onClick={() => handleRemove(exercise)}>x</button>
+                            <button className='delete-btn-1 remove-list-item' onClick={() => handleRemove(exercise)}>x</button>
                         </li>
                     ))}
                 </ul>

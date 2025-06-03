@@ -64,3 +64,26 @@ body.dark {
   transform: translateY(0);
   box-shadow: 0 0 0 currentColor;
 }
+
+.delete-btn-1{
+  font-family: 'ClashGrotesk-SemiBold', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--flame);
+  background-color: var(--background-color);
+  border: var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn-1:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 0 currentColor;
+}
+
+.delete-btn-1:active {
+  transform: translateY(0);
+  box-shadow: 0 0 0 currentColor;
+}

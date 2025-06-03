@@ -18,7 +18,7 @@
 }
 
 .label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--text-color);
     margin-bottom: 0.5rem;
@@ -56,6 +56,7 @@ select:focus {
 }
 
 .selected-exercise{
+    font-weight: 300;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,4 +64,22 @@ select:focus {
     width: 100%;
     border-radius: 0.5rem;
     background-color: var(--background-color);
+    transition: all 0.2s;
+}
+
+.selected-exercise:has(.remove-list-item:hover) {
+    font-weight: bolder;
+}
+
+.remove-list-item{
+    border-radius: 0.5rem;
+}
+
+.remove-list-item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.25rem 0 currentColor;
+}
+
+.remove-list-item:active {
+    transform: translateY(0rem);
 }
