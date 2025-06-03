@@ -3,7 +3,7 @@ import './StatSettings.css';
 import { useStats } from '../../Contexts/StatsContext';
 
 function StatSettings() {
-    const { metrics, setMetrics, exercises, setExercises, availableExercises } = useStats();
+    const {  exercises, setExercises, availableExercises } = useStats();
 
     function handleSelect(e){
         const selected = e.target.value;
@@ -18,18 +18,7 @@ function StatSettings() {
     return (
         <>
             <h2 className='stat-settings-header'>Stat Settings</h2>
-            <div className='stat-setting'>
-                <label className='label' for="metric">Metric:</label>
-                <select 
-                    name="metric" 
-                    id="metric"
-                    value={metrics}
-                    onChange={(e) => setMetrics(e.target.value)}
-                >
-                    <option value="weight">Weight</option>
-                    <option value="volume">Volume</option>  
-                </select>
-            </div>
+            <p className='label'>compare the weight you lifted for each set in different sesisons</p>
             <div className='stat-setting'>
                 <p className='label'>Exercises</p>
                                 <select value="" onChange={handleSelect}>

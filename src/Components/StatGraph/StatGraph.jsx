@@ -59,7 +59,7 @@ function StatGraph() {
                         .attr("cy", y(set[metrics]))
                         .attr("r", 6)
                         .attr("fill", color(i))
-                        .attr("opacity", 0.8);
+                        .attr("opacity", 1);
                 });
 
                 svg.append("text")
