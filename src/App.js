@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
 import Error from './Pages/Error';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/stat' element={<Stat/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
