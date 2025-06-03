@@ -56,7 +56,8 @@ export function WorkoutProvider({ children }){
                 session, 
                 setSession,
                 setNewSession,
-                addNewTrackToExercise
+                addNewTrackToExercise,
+                setAllPlans
             }}>
             {children}
         </WorkoutContext.Provider>

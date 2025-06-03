@@ -12,7 +12,7 @@ import { useWorkout } from '../Contexts/WorkoutContext';
 import { useNavigate } from 'react-router-dom';
 
 function Plan(){
-    const { plan, setPlan, plans, setPlans } = useWorkout();
+    const { plan, setPlan, allPlans, setAllPlans } = useWorkout();
     const navigate = useNavigate();
 
     function handleAddSession(type) {
@@ -27,8 +27,9 @@ function Plan(){
     }
 
     function handleDeletePlan() {   
-        const updatedPlans = plans.filter(p => p.id !== plan.id);
-        setPlans(updatedPlans);
+        console.log(allPlans)
+        const updatedPlans = allPlans.filter(p => p.id !== plan.id);
+        setAllPlans(updatedPlans);
         if (updatedPlans.length > 0) {
             setPlan(updatedPlans[0]);
         } else {
@@ -36,7 +37,7 @@ function Plan(){
             navigate('/'); // Go to home if no plans left
         }
     }
-        
+
     return(
         <main>
             <PageHeader page='Plan'/>
