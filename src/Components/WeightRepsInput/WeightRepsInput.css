@@ -17,8 +17,8 @@
     border: var(--border);
     border-radius: 0.5rem;
     margin-inline: 1rem;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--background-color);
+    background-color: var(--text-color);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -44,8 +44,19 @@
     background-color: transparent;
     border: var(--border);
     border-radius: 0.5rem;
-    color: var(--flame);
+    color: var(--text-color);
     cursor: pointer;
     margin-right: 1rem;
-    width: 2.5rem;
+    width: 3rem;
+    transition: all 0.2s;
+}
+
+.add-set-btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 0 var(--text-color);
+}
+
+.add-set-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 0 var(--text-color);
 }
