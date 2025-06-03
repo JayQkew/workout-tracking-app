@@ -60,12 +60,14 @@ function WeightRepsInput(props){
                     type="number" 
                     value={weightReps.weight} 
                     placeholder='weight'
+                    min={0}
                     onChange={handleWeightChange}/>
                 <p>x</p>
                 <input 
                     type="number" 
                     value={weightReps.reps} 
                     placeholder='reps'
+                    min={0}
                     onChange={handleRepsChange}/>
             </div>
             <button className="add-set-btn" onClick={handleAddSet}>+</button>

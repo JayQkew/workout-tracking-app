@@ -37,6 +37,7 @@ function ExerciseSets(props){
                     type="number" 
                     value={exercise.sets} 
                     onChange={handleSetsChange}
+                    min={0}
                     placeholder="0"/>
             </div>
             <button className="delete-exercise-btn delete-btn-1" onClick={handleDeleteSet}>x</button>
