@@ -27,6 +27,26 @@ aside{
     gap: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+    .main-content {
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    aside {
+        box-sizing: border-box;
+        display: inline;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin-inline: 1rem;
+    }
+    .main-cards {
+        width: 100%;
+    }
+    
+}
+
 .plan-name-card{
     font-family: var(--regular-font);
     font-weight: bolder;
