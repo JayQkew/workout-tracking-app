@@ -18,10 +18,10 @@ function StatSettings() {
     return (
         <>
             <h2 className='stat-settings-header'>Stat Settings</h2>
-            <p className='label'>compare the weight you lifted for each set in different sesisons</p>
+            <p>compare the weight you lifted for each set in different sesisons</p>
             <div className='stat-setting'>
                 <p className='label'>Exercises</p>
-                                <select value="" onChange={handleSelect}>
+                <select value="" onChange={handleSelect}>
                     <option value="" disabled>Select exercise</option>
                     {availableExercises.map((ex, index) => (
                         <option key={index} value={ex}>{ex}</option>

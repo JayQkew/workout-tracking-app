@@ -59,3 +59,8 @@
 .delete-rest{
     color: var(--flame);
 }
+
+.to-session{
+    width:fit-content;
+    margin-inline: 1rem;
+}

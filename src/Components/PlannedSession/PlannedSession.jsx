@@ -51,7 +51,7 @@ function PlannedSession(props){
                                 session={session}
                                 key={i}/>)}
                     </ul> 
-                    <button className="add-exercise-btn" onClick={handleAddExercise}>Add Exercise</button>
+                    <button className="add-exercise-btn to-session" onClick={handleAddExercise}>Add Exercise</button>
                 </>
             }
 
