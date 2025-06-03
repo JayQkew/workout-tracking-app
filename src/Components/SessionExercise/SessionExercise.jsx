@@ -62,12 +62,26 @@ function SessionExercise(props){
         e.id === ex.id ? updatedExercise : e
     );
     setNewSession({ ...session, exercises: updatedExercises });
-}
+    }
+
+    function progressBarWidth() {
+        const percentage = (trackCount / ex.sets) * 100;
+        return Math.min(percentage, 100);
+    }
 
     return(
         <section className="exercise-card">
             <h2 className='exercise-name'>{ ex.name }</h2>
-            <p>{trackCount} / {ex.sets}</p>
+            {/* <p>{trackCount} / {ex.sets}</p> */}
+            <div className='progress-bar-wrapper'>
+                <div className='progress-bar'>
+                    <div 
+                        className='progress'
+                        style={{ width: `${progressBarWidth()}%` }}>
+                        <p>{trackCount} / {ex.sets}</p>
+                    </div>
+                </div>
+            </div>
             <WeightRepsInput exercise={exercise}/>
             <ul className='set-list'>
                 {todayTrack.sets.map((s, i) => (
