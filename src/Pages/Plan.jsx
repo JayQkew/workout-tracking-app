@@ -29,7 +29,7 @@ function Plan(){
                     <AllPlans/>
                 </aside>
                 <section className="main-cards">
-                    <h2>{plan.name}</h2>
+                    <h2 className='plan-name-card'>{plan.name}</h2>
                     {plan.sessions.map((s, i) => (
                         <PlannedSession 
                             session={s} 

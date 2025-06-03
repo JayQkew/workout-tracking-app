@@ -27,9 +27,22 @@ aside{
     gap: 1rem;
 }
 
-.main-cards h2{
+.plan-name-card{
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
     text-decoration: underline solid var(--flame);
+}
+
+.session-name{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    height: 3rem;
+    color: var(--flame);
 }
 
 .add-session-btns{

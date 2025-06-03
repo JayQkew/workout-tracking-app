@@ -17,6 +17,7 @@ function Session(){
                     <AllSessions plan={plan}/>
                 </aside>
                 <section className="main-cards">
+                    <h2 className='session-name'>{session.name}</h2>
                     {session.exercises.map((e, index) => (
                         <SessionExercise 
                             key={index}
