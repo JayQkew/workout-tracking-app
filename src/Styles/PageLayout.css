@@ -28,10 +28,17 @@ aside{
 }
 
 .plan-name-card{
+    font-family: var(--regular-font);
+    font-weight: bolder;
     width: 100%;
     text-align: center;
     font-size: 2rem;
     text-decoration: underline solid var(--flame);
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .session-name{
@@ -64,4 +71,52 @@ button{
 .add-session-btn{
     width: 100%;
     height: 5rem;
+}
+
+.plan-name-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-name-input-wrapper .edit-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--background-color);
+}
+
+.plan-name-input-wrapper:hover .edit-icon,
+.plan-name-input-wrapper:focus-within .edit-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.delete-plan-btn{
+    font-family: var(--regular-font);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    height: 3rem;
+    border: 3px solid var(--flame);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: var(--flame);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-plan-btn:hover{
+    color: var(--background-color);
+    background-color: var(--flame);
 }
