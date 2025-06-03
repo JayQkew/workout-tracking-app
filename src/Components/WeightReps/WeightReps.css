@@ -10,6 +10,33 @@
     margin: 0 1rem;
 }
 
+@media (max-width: 768px) {
+    .weight-reps{
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .weight-reps .weight-reps-display{
+        margin: 0;
+    }
+
+    .weight-reps .weight-reps-display{
+        gap: 0.25rem;
+    }
+
+    .weight-reps button{
+        margin: 0 0.25rem;
+    }
+
+    .weight-reps .delete-btn-1{
+        margin-right: 0;
+    }
+    .edit-weight-reps{
+        box-sizing: border-box;
+        margin-right: 1rem;
+    }
+}
+
 .weight-reps-display{
     display: flex;
     flex-direction: row;

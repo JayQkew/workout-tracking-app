@@ -44,7 +44,7 @@ function WeightReps(props){
                 <div className='weight-reps-display'>
                     <span>{weightReps.weight} kg</span> <p>x</p> <span>{weightReps.reps} reps</span>
                 </div>
-                <button className='add-exercise-btn' onClick={handleEditClick}>Edit</button>
+                <button className='add-exercise-btn .edit-weight-reps' onClick={handleEditClick}>Edit</button>
             </li>
         )
     )
