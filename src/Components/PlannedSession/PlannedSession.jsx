@@ -2,6 +2,7 @@ import ExerciseSets from "../ExerciseSets/ExerciseSets"
 import './PlannedSession.css'
 
 import { useWorkout } from '../../Contexts/WorkoutContext';
+import { ReactComponent as Trash } from '../../Styles/recycle-bin-2--remove-delete-empty-bin-trash-garbage.svg';
 
 function PlannedSession(props){
     const { session } = props
@@ -42,7 +43,9 @@ function PlannedSession(props){
                             value={session.name}
                             onChange={handleChange}
                         />
-                        <button className="delete-btn" onClick={handleDeleteSession}>-</button>    
+                        <button className="delete-btn" onClick={handleDeleteSession}>
+                            <Trash />
+                        </button>    
                     </div>
                     <ul className="exercise-list">
                         {session.exercises.map((e, i) => 

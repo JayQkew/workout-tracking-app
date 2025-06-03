@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
+    width: 3.5rem;
     height: 100%;
     border-radius: 0.5rem;
     background-color: var(--flame);
@@ -54,6 +54,22 @@
     border: transparent;
     cursor: pointer;
     margin-right: 1rem;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 0 var(--text-color);
+}
+
+.delete-btn:active{
+    transform: translateY(0);
+    box-shadow:  0 0 0 var(--text-color);
+}
+
+.delete-btn svg{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .delete-rest{
@@ -61,6 +77,5 @@
 }
 
 .to-session{
-    width:fit-content;
     margin-inline: 1rem;
 }

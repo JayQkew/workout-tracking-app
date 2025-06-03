@@ -55,7 +55,6 @@ function Header(){
                 className="light-mode nav-link"
                 onClick={changeLightMode}
                 role="button"
-                aria-label="Toggle light/dark mode"
               >
                 <LightMode />
               </div>
