@@ -11,6 +11,7 @@
     border: var(--border);
     cursor: pointer;
     transition: all 0.2s;
+    padding: 0;
 }
 
 .plan-card:hover{

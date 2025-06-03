@@ -51,6 +51,7 @@ function Plan(){
                             type="text" 
                             value={plan.name}
                             className='plan-name-card'
+                            placeholder='Plan Name'
                             onChange={e => setPlan({ ...plan, name: e.target.value })}/>
                         <EditIcon className="edit-icon" />
                     </div>
