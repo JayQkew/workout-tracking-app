@@ -16,10 +16,10 @@ function StatSettings() {
     }
 
     return (
-        <section className="stat-settings">
-            <h2>Stat Settings</h2>
-            <div>
-                <label for="metric">Metric:</label>
+        <>
+            <h2 className='stat-settings-header'>Stat Settings</h2>
+            <div className='stat-setting'>
+                <label className='label' for="metric">Metric:</label>
                 <select 
                     name="metric" 
                     id="metric"
@@ -30,24 +30,25 @@ function StatSettings() {
                     <option value="volume">Volume</option>  
                 </select>
             </div>
-            <div>
-                <p>Exercises</p>
-                <ul>
-                    {exercises.map((exercise, index) => (
-                        <li key={index}>
-                            {exercise}
-                            <button onClick={() => handleRemove(exercise)}>x</button>
-                        </li>
-                    ))}
-                </ul>
-                <select value="" onChange={handleSelect}>
+            <div className='stat-setting'>
+                <p className='label'>Exercises</p>
+                                <select value="" onChange={handleSelect}>
                     <option value="" disabled>Select exercise</option>
                     {availableExercises.map((ex, index) => (
                         <option key={index} value={ex}>{ex}</option>
                     ))}
                 </select>
+                <ul>
+                    {exercises.map((exercise, index) => (
+                        <li className='selected-exercise' key={index}>
+                            {exercise}
+                            <button onClick={() => handleRemove(exercise)}>x</button>
+                        </li>
+                    ))}
+                </ul>
+
             </div>
-        </section>
+        </>
     );
 }
 
